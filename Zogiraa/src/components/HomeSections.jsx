@@ -2,7 +2,7 @@ import React from "react";
 import "./HomeSections.css";
 
 import Mimg from "../assets/Mason.png";
-import Pimg from "../assets/plumber.png";
+import Pimg from "../assets/Plumber.png";
 import Simg from "../assets/Security.png";
 import Dimg from "../assets/Delivery-Boy.png";
 
@@ -16,7 +16,7 @@ import HDriver from "../assets/HDriver.png";
 import pp from "../assets/pp.png";
 import houseclean from "../assets/house-clean.png";
 
-import cement from "../assets/cement.png";
+import cement from "../assets/Cement.png";
 import fevicol from "../assets/Fevicol.png";
 import toolset from "../assets/ToolSet.png";
 import safety from "../assets/safety.png";
