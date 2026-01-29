@@ -1,0 +1,177 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.successStories {
+  padding: 1rem 4rem;
+  font-weight: 400;
+  margin-bottom: 55px;
+  font-family: "Poppins", sans-serif;
+}
+
+.successTitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.storiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  justify-content: center !important;
+  max-width: 1500px;
+  margin: 0 18px;
+}
+
+.storyCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 615px;
+ border: 1px solid #e5e7eb;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    0px 10px 15px 0px rgba(0, 0, 0, 0.10),
+    0px 4px 6px 0px rgba(0, 0, 0, 0.10);
+}
+.storyCard:hover {
+    transform: scale(1.03);
+    border: 1px solid #2563E8;
+    border-top: 4px solid #2563E8;
+
+}
+.storyHeader {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.storyAvatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.storyName {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.storyRole {
+  font-size: 16px;
+  color: #374151;
+}
+.storyText {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.storiesWrapper {
+  position: relative;
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.storiesWrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.blackOverlay {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+.blackOverlay.active {
+  opacity: 1;
+}
+.storiesWrapper.blackMode .storyCard {
+  box-shadow: none !important;
+  opacity: 0 !important;
+  transform: translateY(10px) scale(0.98);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+@media (max-width: 768px) {
+  .storiesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1024px) {
+  .successStories {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .successTitle {
+    font-size: 22px;
+  }
+
+  .storiesGrid {
+    gap: 20px;
+  }
+
+  .storyText {
+    font-size: 13.5px;
+  }
+}
+@media (max-width: 768px) {
+  .successStories {
+    padding: 0.75rem 1rem;
+    margin-bottom: 30px;
+  }
+
+  .successTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .storiesGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .storyCard {
+    padding: 14px;
+  }
+
+  .storyAvatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .storyName {
+    font-size: 14px;
+  }
+
+  .storyRole {
+    font-size: 12.5px;
+  }
+
+  .storyText {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .successTitle {
+    font-size: 18px;
+  }
+
+  .storyCard {
+    padding: 12px;
+  }
+
+  .storyText {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+}

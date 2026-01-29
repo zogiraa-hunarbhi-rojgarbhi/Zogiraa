@@ -1,0 +1,259 @@
+.footer {
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
+}
+
+.footer-top {
+  background: #2A5EB1;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.brand-logo {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.brand-points {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.footer-links h4 {
+    color:#2A5EB1;
+    font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 13px;
+  color: #2A5EB1;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.footer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.footer-card {
+  background: #E5E7EB;
+  padding: 20px;
+  padding-top: 1px;
+  border-radius: 12px;
+}
+.brand-points {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.brand-points span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.point-icon {
+  font-size: 14px;
+}
+
+.footer-card h4 {
+    color:#2A5EB1;
+  font-size: 16px;
+}
+
+.footer-card p {
+  font-size: 14px;
+  color: rgb(0, 0, 0, 0.5);
+  margin-bottom: 4px;
+}
+.sub-heading{
+    color: #ffffff;
+}
+.footer-card input {
+  width: 90%;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.whatsapp-btn {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.logoslogan{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.logo-img{
+    height: 32px !important;
+    width: 48px !important;
+  cursor: pointer;
+}
+.subscribe-btn {
+  background: #2A5EB1;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  width: 98%;
+  border-radius: 6px;
+}
+
+.qr-box {
+  width: 120px;
+  height: 120px;
+  background: #e5e7eb;
+  margin-bottom: 10px;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.store-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.apple {
+  background: #000;
+  color: #fff;
+}
+
+.android {
+  background: #16A34A;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.social-icons span {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fb { background: #1877f2; }
+.ig { background: #e1306c; }
+.in { background: #0a66c2; }
+.tw { background: #000; }
+.yt { background: #ff0000; }
+.wa { background: #22c55e; }
+
+.copyright {
+  font-size: 13px;
+  color: #555;
+}
+@media (max-width: 1024px) {
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-points {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    padding: 40px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    padding: 24px 16px;
+  }
+
+  .brand-logo {
+    font-size: 22px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .footer-links h4 {
+    margin-top: 16px;
+  }
+
+  .footer-card {
+    padding: 16px;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    padding: 24px 16px;
+  }
+}
