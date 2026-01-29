@@ -1,5 +1,4 @@
 import react from "react";
-import Banner from "../components/Banner"
 import SuccessStories from "../components/SuccessStories";
 import WhyChooseUs from "../components/WhyChooseUs";
 import WhyZogiraa from  "../components/WhyZogirra";
