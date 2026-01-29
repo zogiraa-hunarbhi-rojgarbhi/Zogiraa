@@ -4,6 +4,7 @@
   font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
 }
+
 .category-bar {
   width: 100%;
   background: #FBBF24;
@@ -186,6 +187,9 @@
   }
 }
 @media(max-width:400px) {
+  .hero-wrapper{
+    max-height: 1000px;
+  }
   .category-bar{
     gap: 2px;
     font-size: 8px;
@@ -200,5 +204,30 @@
     gap: 2px;
     padding: 3px 3px;
     font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .info-card {
+    max-width: 92%;
+    width: auto;            
+    padding: 6px 8px;
+    gap: 6px;
+    margin: 0 auto;           
+  }
+  .info-card-img {
+    width: 34px;
+    height: 34px;
+  }
+  .info-card-content h3 {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  .info-card-content p {
+    font-size: 10px;
+    line-height: 1.3;
   }
 }
