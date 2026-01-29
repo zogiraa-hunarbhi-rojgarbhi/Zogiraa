@@ -1,64 +1,63 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./SuccessStories.css";
-
+import test from "../assets/testimonial-01.png";
 const allReviews = [
   {
     name: "Rajesh Kumar",
     role: "Electrician",
     text:
       "Through Zogiraa, I've increased my monthly income by 60%. The platform connects me with quality clients who value skilled work.",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
+    image: test,
   },
   {
     name: "Priyansh Sharma",
     role: "Construction Company Owner",
     text:
       "Finding reliable workers was always a challenge. Zogiraa's verification system gives me confidence in every hire.",
-    image: "https://randomuser.me/api/portraits/men/22.jpg",
+    image: test,
   },
   {
     name: "Kundan Kumar",
     role: "Contractor Businessman",
     text:
       "Having a great experience while selling my goods and products on this having great profit and website is so easy and reliable.",
-    image: "https://randomuser.me/api/portraits/men/33.jpg",
+    image: test,
   },
   {
     name: "Sita Kumari",
     role: "Cleaner",
     text:
       "Best platform for finding daily jobs. No commission charges and verified employers make it trustworthy.",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    image: test,
   },
 
-  // next 4
   {
     name: "Amit Verma",
     role: "Plumber",
     text:
       "Since joining Zogiraa, I’m getting regular plumbing work in my area. Payments are smooth and clients are genuine.",
-    image: "https://randomuser.me/api/portraits/men/44.jpg",
+    image: test,
   },
   {
     name: "Neha Singh",
     role: "Home Tutor",
     text:
       "Zogiraa helped me find students quickly. The platform is easy to use and I got good local leads without any hassle.",
-    image: "https://randomuser.me/api/portraits/women/33.jpg",
+    image: test,
   },
   {
     name: "Rakesh Yadav",
     role: "Painter",
     text:
       "I used to struggle finding consistent work, but now I get painting jobs every week. Very helpful for skilled workers.",
-    image: "https://randomuser.me/api/portraits/men/55.jpg",
+    image: test,
   },
   {
     name: "Anjali Devi",
     role: "Cook",
     text:
       "This is the best app for finding cooking jobs nearby. Verified families and no commission makes it trustworthy.",
-    image: "https://randomuser.me/api/portraits/women/45.jpg",
+    image: test,
   },
 ];
 
