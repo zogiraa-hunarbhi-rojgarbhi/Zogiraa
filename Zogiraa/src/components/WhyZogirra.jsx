@@ -1,6 +1,6 @@
 import React from "react";
 import "./WhyZogirra.css";
-import icon01  from "../assets/why-Zogiraa01.png";
+import icon01  from "../assets/why-zogiraa01.png";
 import icon02 from   "../assets/why-Zogiraa02.png";
 import icon03  from "../assets/why-Zogiraa03.png";
 import icon04 from  "../assets/why-Zogiraa04.png";
