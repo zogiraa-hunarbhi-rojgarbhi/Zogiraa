@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSearch, FiMic } from "react-icons/fi";
-import logo from "../assets/logo.jpeg";
-import "./HeaderSearch.css";
+import logo from "../../assets/logo.jpeg";
+import "./Header.css";
 
 const HeaderSearch = () => {
   return (

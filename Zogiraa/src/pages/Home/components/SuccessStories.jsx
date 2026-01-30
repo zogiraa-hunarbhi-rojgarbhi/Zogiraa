@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./SuccessStories.css";
-import test from "../assets/testimonial-01.png";
+import test from "../../../assets/testimonial-01.png";
 const allReviews = [
   {
     name: "Rajesh Kumar",

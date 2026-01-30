@@ -1,0 +1,98 @@
+/* Wrapper */
+.vm-wrapper {
+  background: #f6f9fc;
+  padding: 80px 20px;
+}
+
+/* Container */
+.vm-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.vm-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 362px;
+  max-width: 600px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon circle */
+.vm-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.vm-icon.blue {
+  background: #2A5EB1;
+}
+
+.vm-icon.yellow {
+  background: #FBBF24;
+}
+
+/* Titles */
+.vm-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.blue-text {
+  color: #2A5EB1;
+}
+
+.yellow-text {
+  color: #FBBF24;
+}
+
+/* Vision text */
+.vm-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4B5563;
+}
+
+/* Mission list */
+.vm-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.vm-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: #5f6c7b;
+  margin-bottom: 12px;
+}
+
+.vm-list li svg {
+  color: #22c55e;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .vm-container {
+    grid-template-columns: 1fr;
+  }
+}

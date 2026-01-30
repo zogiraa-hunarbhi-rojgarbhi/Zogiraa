@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./TestimonialVideo.css";
 
-import mainThumb from "../assets/main-1.png";
-import t1 from "../assets/test-1.jpg";
-import t2 from "../assets/test-2.jpg";
-import t3 from "../assets/test-main.jpg";
+import mainThumb from "../../../assets/main-1.png";
+import t1 from "../../../assets/test-1.jpg";
+import t2 from "../../../assets/test-2.jpg";
+import t3 from "../../../assets/test-main.jpg";
 
-import mainVideo from "../assets/testimonial-video.mp4";
-import raviVideo from "../assets/t-1.mp4";
-import priyaVideo from "../assets/t-2.mp4";
-import sitaVideo from "../assets/t-3.mp4";
+import mainVideo from "../../../assets/testimonial-video.mp4";
+import raviVideo from "../../../assets/t-1.mp4";
+import priyaVideo from "../../../assets/t-2.mp4";
+import sitaVideo from "../../../assets/t-3.mp4";
 
 const testimonials = [
   {

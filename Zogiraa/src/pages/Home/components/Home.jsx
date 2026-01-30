@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Hero from  "../assets/Home-Page01.png";
+import Hero from  "../../../assets/Home-Page01.png";
 import Hamburger from "../components/Hamburger";
 const Home = () => {
   return (

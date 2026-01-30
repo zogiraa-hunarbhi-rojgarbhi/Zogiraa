@@ -1,9 +1,9 @@
 import React from "react";
 import "./WhyChooseUs.css";
-import icon01  from "../assets/why-Icon01.png";
-import icon02 from   "../assets/why-Icon02.png";
-import icon03  from "../assets/why-Icon03.png";
-import icon04 from  "../assets/why-Icon04.png";
+import icon01  from "../../../assets/why-Icon01.png";
+import icon02 from   "../../../assets/why-Icon02.png";
+import icon03  from "../../../assets/why-Icon03.png";
+import icon04 from  "../../../assets/why-Icon04.png";
 const WhyChooseUs = () => {
   const data = [
     {
