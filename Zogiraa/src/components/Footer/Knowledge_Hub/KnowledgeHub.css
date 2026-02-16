@@ -1,0 +1,173 @@
+/* ===== Knowledge Hub Base ===== */
+.kh-wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 16px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.kh-header{
+  margin-bottom: 18px;
+}
+
+/* Title = brand color */
+.kh-title{
+  font-size: 34px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  color: #2A5EB1;          /* ✅ footer brand */
+  font-weight: 800;
+}
+
+/* Subtitle = neutral */
+.kh-sub{
+  margin: 0 0 18px;
+  color: #667085;
+  line-height: 1.55;
+  font-size: 15px;
+}
+
+/* ===== Navigation ===== */
+.kh-nav{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.kh-nav a{
+  text-decoration: none !important;
+}
+
+.kh-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  background: #f3f4f6;                 /* neutral */
+  border: 1px solid rgba(0,0,0,0.08);
+
+  color: #111827;                       /* neutral text */
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+.kh-link:hover{
+  background: #eef2ff;                  /* soft blue tint */
+  border-color: rgba(42, 94, 177, 0.25);
+  color: #2A5EB1;                       /* ✅ brand on hover */
+}
+
+.kh-link.active{
+  background: #2A5EB1;                  /* ✅ footer brand */
+  border-color: #2A5EB1;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(42, 94, 177, 0.22);
+}
+
+/* ===== Page header inside each page ===== */
+.kh-page-header{
+  margin: 10px 0 22px;
+}
+
+.kh-page-header h2{
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: #111827;                       /* neutral */
+  font-weight: 800;
+}
+
+.kh-page-header p{
+  margin: 0;
+  color: #667085;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ===== Main area ===== */
+.kh-main{
+  margin-top: 18px;
+}
+
+/* ===== Cards / Grid ===== */
+.kh-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.kh-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 22px rgba(16, 24, 40, 0.06);
+  position: relative;
+}
+
+/* small top accent line using brand color */
+.kh-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 16px 16px 0 0;
+  background: rgba(42, 94, 177, 0.85); /* ✅ brand accent */
+}
+
+.kh-card h3{
+  margin: 8px 0 10px;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #111827;                       /* neutral */
+  font-weight: 800;
+}
+
+.kh-card p{
+  margin: 0;
+  color: #475467;
+  line-height: 1.65;
+  font-size: 14.5px;
+}
+
+.kh-list{
+  margin: 0;
+  padding-left: 18px;
+  color: #475467;
+  line-height: 1.9;
+  font-size: 14.5px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px){
+  .kh-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px){
+  .kh-wrap{
+    padding: 32px 14px;
+  }
+
+  .kh-title{
+    font-size: 28px;
+  }
+
+  .kh-nav{
+    flex-direction: column;
+  }
+
+  .kh-link{
+    width: 100%;
+  }
+}

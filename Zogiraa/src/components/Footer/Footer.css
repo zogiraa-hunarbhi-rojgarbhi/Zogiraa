@@ -44,13 +44,22 @@
   margin-bottom: 10px;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links .footer-link {
   display: block;
   font-size: 13px;
   color: #2A5EB1;
   margin-bottom: 6px;
   cursor: pointer;
+  text-decoration: none;
 }
+
+.footer-links a:hover,
+.footer-links .footer-link:hover {
+  text-decoration: none;   /* ✅ keeps underline removed on hover */
+}
+
+
 
 .footer-cards {
   display: grid;
