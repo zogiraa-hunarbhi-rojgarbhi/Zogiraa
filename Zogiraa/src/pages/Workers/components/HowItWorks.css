@@ -1,0 +1,91 @@
+/* HowItWorks.css */
+
+.hiw-section {
+  padding: 1.25rem 2rem; /* py-5 px-8 */
+}
+
+.hiw-container {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hiw-header {
+  margin-bottom: 2rem;
+}
+
+.hiw-header h2 {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hiw-header p {
+  color: #6b7280; /* text-gray-500 */
+}
+
+/* Grid setup using Flexbox for easier control */
+.hiw-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.hiw-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hiw-icon-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px; /* rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Icon Variations */
+.icon-blue {
+  background-color: #dbeafe; /* bg-blue-100 */
+  color: #2563eb; /* text-blue-600 */
+}
+
+.icon-yellow {
+  background-color: #fef9c3; /* bg-yellow-100 */
+  color: #ca8a04; /* text-yellow-600 */
+}
+
+.icon-green {
+  background-color: #dcfce7; /* bg-green-100 */
+  color: #16a34a; /* text-green-600 */
+}
+
+.hiw-step h3 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hiw-step p {
+  color: #6b7280;
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.625;
+  max-width: 20rem; /* max-w-xs */
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .hiw-grid {
+    flex-direction: row; /* md:grid-cols-3 effect */
+    justify-content: space-between;
+  }
+  
+  .hiw-step {
+    flex: 1;
+  }
+}

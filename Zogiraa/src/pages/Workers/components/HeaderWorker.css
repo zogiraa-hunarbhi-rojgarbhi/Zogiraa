@@ -1,0 +1,80 @@
+.hw-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.hw-container {
+  max-width: 80rem; /* 1280px */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+}
+
+.hw-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem; /* h-16 */
+}
+
+.hw-button-group {
+  display: flex;
+  gap: 1rem; /* space-x-4 */
+}
+
+.hw-btn-login {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  transition: color 0.2s ease;
+}
+
+.hw-btn-login:hover {
+  color: #2563eb;
+}
+
+.hw-btn-signup {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.hw-btn-signup:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .hw-container {
+    padding: 0 1.5rem; /* sm:px-6 */
+  }
+  .hw-button-group {
+    gap: 2rem; /* sm:space-x-8 */
+  }
+  .hw-btn-login, .lp-btn-signup {
+    font-size: 1rem;
+  }
+  .hw-btn-signup {
+    padding: 0.625rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hw-container {
+    padding: 0 2rem; /* lg:px-8 */
+  }
+}
