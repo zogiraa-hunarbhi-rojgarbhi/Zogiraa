@@ -1,0 +1,142 @@
+/* HeroSection.css */
+
+.hero-section {
+  background-color: rgba(254, 252, 232, 1);
+  padding-right:12px;
+  padding-bottom: 20px;
+  margin-top: 64px;
+  min-height: auto;
+}
+
+.hero-container {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Stacked on mobile */
+  gap: 3rem;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Typography */
+.hero-title {
+  margin-top: 10px;
+  font-size: 30px; 
+  font-weight: 700;
+  line-height: 40px;
+  padding-left: 10px;
+  color: #111827;
+}
+
+.hero-title span {
+  color: #2563eb;
+}
+
+.hero-description {
+  margin-top:40px;
+  padding-left: 10px;
+  color: #4b5563;
+  font-size: 1rem;
+  max-width: 28rem;
+  line-height: 1.5;
+}
+
+/* Button Group Wrapper */
+.button-group {
+  margin-top:50px;
+  margin-left:20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 10px;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.hero-btn:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Button Colors */
+.btn-labour { background-color: rgba(59, 130, 246, 1); }
+.btn-labour:hover { background-color: rgb(31, 28, 246); }
+
+.btn-employer { background-color: rgba(251, 191, 36, 1); }
+.btn-employer:hover { background-color: rgb(227, 170, 26); }
+.btn-employer .icon-dark { color: black; }
+
+.btn-contractor { background-color: rgba(34, 197, 94, 1); }
+.btn-contractor:hover { background-color: rgb(1, 170, 63); }
+
+/* Image Styling */
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.image-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  background-color: #e5e7eb;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 3rem 2rem;
+    height: 30rem; /* md:h-120 */
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+  }
+
+  .hero-title {
+    font-size: 2.5rem; /* md:text-4xl */
+  }
+
+  .hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 18px;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+  .image-card {
+    max-width: 20rem; /* md:w-80 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3rem; /* lg:text-5xl */
+  }
+}
