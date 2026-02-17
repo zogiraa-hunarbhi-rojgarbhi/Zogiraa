@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { FaShieldAlt , FaHeart, FaLeaf } from "react-icons/fa";
@@ -66,10 +67,10 @@ const Footer = () => {
 
           <div>
             <h4>Important Policies</h4>
-            <a>Privacy Policy</a>
-            <a>Terms & Conditions</a>
-            <a>Refund & Cancellation Policy</a>
-            <a>Payment Policy</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-and-conditions">Terms & Conditions</Link>
+            <Link to="/refund-policy">Refund & Cancellation Policy</Link>
+            <Link to="/payment-policy">Payment Policy</Link>
           </div>
 
           <div>
