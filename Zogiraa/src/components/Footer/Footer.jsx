@@ -1,9 +1,14 @@
 import React from "react";
 import "./Footer.css";
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaWhatsapp } from "react-icons/fa";
-import { FaShieldAlt , FaHeart, FaLeaf } from "react-icons/fa";
+import {
+  FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaWhatsapp
+} from "react-icons/fa";
+import { FaShieldAlt, FaHeart, FaLeaf } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.jpeg";
+
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -58,10 +63,11 @@ const Footer = () => {
 
           <div>
             <h4>Knowledge Hub</h4>
-            <a>Blog</a>
-            <a>Tips & Benefits for Employers</a>
-            <a>Job Readiness Tips & Benefits</a>
-            <a>Government Schemes, Worker Rights</a>
+
+            <Link className="footer-link" to="/knowledge/blog">Blog</Link>
+            <Link className="footer-link" to="/knowledge/employers">Tips & Benefits for Employers</Link>
+            <Link className="footer-link" to="/knowledge/job-readiness">Job Readiness Tips & Benefits</Link>
+            <Link className="footer-link" to="/knowledge/government-schemes">Government Schemes, Worker Rights</Link>
           </div>
 
           <div>
