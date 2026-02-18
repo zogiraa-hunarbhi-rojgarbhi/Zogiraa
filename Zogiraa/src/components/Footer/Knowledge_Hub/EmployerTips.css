@@ -1,0 +1,430 @@
+/* ===== EmployerTips.css ===== */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #3b82f6;
+  --primary-soft: #dbeafe;
+  --secondary: #0f2d5c;
+  --secondary-dark: #0a1f3f;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== Base Layout ===== */
+.kh-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, var(--gray-50) 100%);
+  min-height: 100vh;
+}
+
+/* ===== Page Header ===== */
+.kh-page-header {
+  margin-bottom: 48px;
+  position: relative;
+  text-align: center;
+}
+
+.kh-page-header::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: var(--radius-sm);
+}
+
+.kh-page-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.kh-page-sub {
+  font-size: 18px;
+  color: var(--gray-500);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ===== Blog Grid ===== */
+.kh-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* ===== Blog Card ===== */
+.kh-blog-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.kh-blog-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.02) 0%, rgba(15, 45, 92, 0.02) 100%);
+  opacity: 0;
+  transition: var(--transition);
+  pointer-events: none;
+}
+
+.kh-blog-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.kh-blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-light);
+}
+
+.kh-blog-card:hover::before {
+  opacity: 1;
+}
+
+.kh-blog-card.open {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-soft), var(--shadow-lg);
+}
+
+/* ===== Tip Head Section ===== */
+.kh-tip-head {
+  padding: 24px 24px 8px 30px;
+  position: relative;
+}
+
+.kh-blog-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 10px;
+  line-height: 1.3;
+  position: relative;
+  display: inline-block;
+}
+
+.kh-blog-title::before {
+  content: '💡';
+  position: absolute;
+  left: -24px;
+  top: 0;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.kh-blog-card:hover .kh-blog-title::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.kh-blog-excerpt {
+  color: var(--gray-600);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  padding-bottom: 16px;
+  border-bottom: 2px dashed var(--gray-200);
+}
+
+/* ===== Blog Body ===== */
+.kh-blog-body {
+  padding: 0 24px 24px 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== List Styling ===== */
+.kh-list {
+  padding-left: 0;
+  margin: 0 0 20px 0;
+  color: var(--gray-600);
+  font-size: 14px;
+  line-height: 1.7;
+  list-style: none;
+  flex: 1;
+}
+
+.kh-list li {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.kh-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.kh-list li:hover {
+  transform: translateX(4px);
+  color: var(--gray-800);
+}
+
+.kh-list li:hover::before {
+  opacity: 1;
+  color: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+/* ===== Read Button ===== */
+.kh-read-btn {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary-soft);
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  align-self: flex-start;
+  margin: 8px 0 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.3px;
+  width: fit-content;
+}
+
+.kh-read-btn:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  gap: 12px;
+}
+
+.kh-read-btn:active {
+  transform: translateY(0);
+}
+
+/* ===== Expand Section ===== */
+.kh-expand {
+  margin-top: 16px;
+  padding: 20px 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--primary);
+  animation: slideDown 0.3s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.kh-expand::before {
+  content: '✨';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  opacity: 0.2;
+}
+
+.kh-expand-sum {
+  margin: 0;
+  color: var(--gray-700);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* ===== Card-specific animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Staggered card animations ===== */
+.kh-blog-card:nth-child(1) { animation: fadeIn 0.5s ease-out 0.1s both; }
+.kh-blog-card:nth-child(2) { animation: fadeIn 0.5s ease-out 0.2s both; }
+.kh-blog-card:nth-child(3) { animation: fadeIn 0.5s ease-out 0.3s both; }
+.kh-blog-card:nth-child(4) { animation: fadeIn 0.5s ease-out 0.4s both; }
+.kh-blog-card:nth-child(5) { animation: fadeIn 0.5s ease-out 0.5s both; }
+.kh-blog-card:nth-child(6) { animation: fadeIn 0.5s ease-out 0.6s both; }
+
+/* ===== Empty State (if needed) ===== */
+.kh-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--gray-50);
+  border-radius: var(--radius-xl);
+  border: 2px dashed var(--gray-300);
+  color: var(--gray-500);
+}
+
+.kh-empty h3 {
+  font-size: 24px;
+  color: var(--gray-700);
+  margin-bottom: 12px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+  .kh-blog-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .kh-page-title {
+    font-size: 32px;
+  }
+
+  .kh-page-sub {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+
+  .kh-wrap {
+    padding: 30px 20px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .kh-page-title {
+    font-size: 28px;
+  }
+
+  .kh-tip-head {
+    padding: 20px 20px 8px 26px;
+  }
+
+  .kh-blog-body {
+    padding: 0 20px 20px 26px;
+  }
+
+  .kh-blog-title {
+    font-size: 20px;
+  }
+
+  .kh-blog-title::before {
+    left: -20px;
+  }
+
+  .kh-read-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .kh-expand {
+    padding: 16px 12px;
+  }
+}
+
+/* ===== Dark mode support ===== */
+@media (prefers-color-scheme: dark) {
+  .kh-wrap {
+    background: linear-gradient(135deg, var(--gray-900) 0%, #000000 100%);
+  }
+
+  .kh-blog-card {
+    background: var(--gray-800);
+    border-color: var(--gray-700);
+  }
+
+  .kh-blog-title {
+    color: var(--gray-100);
+  }
+
+  .kh-blog-excerpt {
+    color: var(--gray-400);
+    border-bottom-color: var(--gray-700);
+  }
+
+  .kh-list {
+    color: var(--gray-400);
+  }
+
+  .kh-list li:hover {
+    color: var(--gray-200);
+  }
+
+  .kh-expand {
+    background: var(--gray-700);
+  }
+
+  .kh-expand-sum {
+    color: var(--gray-300);
+  }
+
+  .kh-page-sub {
+    color: var(--gray-400);
+  }
+}
