@@ -11,12 +11,9 @@ const PaymentPolicy = () => {
   };
 
   const handleContinue = () => {
-    if (agreed) {
-      console.log("Agreed and Continue");
-      // Navigate to next page or perform action
-    } else {
-      alert("Please agree to the payment policy to continue.");
-    }
+    console.log("Agreed and Continue");
+    // TODO: Replace this alert with actual navigation (e.g., using your router) when implemented.
+    alert("You have agreed to the payment policy. Continuing to the next step...");
   };
 
   return (
