@@ -1,0 +1,131 @@
+.policy-page {
+  background: #ffffff;
+}
+
+/* HERO */
+.policy-hero {
+  background: #2f66c9;
+  color: #ffffff;
+  padding: 70px 8%;
+}
+
+.policy-hero h1 {
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.policy-hero p {
+  margin-top: 6px;
+  color: #e5e7eb;
+}
+
+.trust-badge {
+  display: inline-block;
+  margin-top: 12px;
+  background: #16a34a;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* INTRO */
+.policy-intro {
+  padding: 60px 8%;
+}
+
+.policy-intro h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+/* GUIDELINES */
+.policy-guidelines {
+  padding: 60px 8%;
+  background: #f9fafb;
+}
+
+.policy-guidelines h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.policy-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.policy-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.policy-card h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.policy-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-card li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* IMPACT */
+.policy-impact {
+  padding: 70px 8%;
+  background: #2f66c9;
+  color: #ffffff;
+  text-align: center;
+}
+
+.policy-impact h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.policy-impact p {
+  max-width: 800px;
+  margin: 12px auto 30px;
+  color: #e5e7eb;
+}
+
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.impact-stats div {
+  text-align: center;
+}
+
+.impact-stats strong {
+  font-size: 24px;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

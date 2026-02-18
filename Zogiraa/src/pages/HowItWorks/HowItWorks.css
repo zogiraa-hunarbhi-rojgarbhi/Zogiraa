@@ -1,0 +1,181 @@
+.how-page {
+  background: #ffffff;
+}
+
+
+.how-section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.how-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* 🔥 FORCE 5 STEPS IN ONE LINE (DESKTOP) */
+.steps-wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 in one row */
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* STEP CARD */
+.step-card {
+  position: relative;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 16px;
+  background: #1d4ed8;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-card img {
+  width: 56px;
+  height: auto;
+  margin-bottom: 14px;
+}
+
+.step-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.step-card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ARROW BETWEEN STEPS */
+.arrow {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  color: #1d4ed8;
+}
+
+
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .steps-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .how-section {
+    padding: 60px 6%;
+  }
+
+  .steps-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .how-section h2 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .steps-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   TESTIMONIAL SECTION
+========================= */
+.testimonial-section {
+  background: #fff8dc;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.testimonial-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #e5e7eb;
+  border-radius: 50%;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 12px;
+  background: #1d4ed8;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.quote {
+  margin: 18px 0;
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.stars {
+  color: #facc15;
+  font-size: 18px;
+}

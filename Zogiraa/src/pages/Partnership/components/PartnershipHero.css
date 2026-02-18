@@ -1,0 +1,27 @@
+.partner-hero {
+  background: #2f66c9;
+  color: #ffffff;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.partner-hero h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.partner-hero p {
+  margin: 14px auto 28px;
+  max-width: 720px;
+  color: #e5e7eb;
+}
+
+.hero-mail-btn {
+  display: inline-block;
+  background: #ffd43b;
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}

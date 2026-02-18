@@ -1,0 +1,144 @@
+.register-section {
+  padding: 80px 8%;
+  text-align: center;
+  background: #ffffff;
+}
+
+.register-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+/* STEPS */
+.register-steps {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.register-step h4 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.register-step p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.step-circle {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 6px;
+  border-radius: 50%;
+  background: #fde7c7;
+  color: #f59e0b;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HELP BUTTON */
+.help-btn {
+  margin-top: 30px;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* CERTIFICATE */
+.certificate-wrapper {
+  margin-top: 60px;
+}
+
+.sample-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.certificate-box {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.certificate-box h5 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.certificate-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.zoom-text {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #16a34a;
+}
+
+/* IMPACT */
+.impact-section {
+  margin-top: 70px;
+}
+
+.impact-section h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.impact-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.impact-grid h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.orange { color: #f97316; }
+.green { color: #16a34a; }
+.blue { color: #2563eb; }
+.purple { color: #9333ea; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .register-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .register-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}

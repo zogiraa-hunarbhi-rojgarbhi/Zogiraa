@@ -1,0 +1,78 @@
+.partner-cards {
+  padding: 80px 8%;
+  background: #f9fafb;
+}
+
+/* GRID */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.partner-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.partner-card h3 {
+  margin-bottom: 12px;
+}
+
+.partner-card ul {
+  padding-left: 18px;
+  margin-bottom: 18px;
+}
+
+.partner-card li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* COLORS */
+.partner-card.blue .card-btn { background: #2563eb; color: #fff; }
+.partner-card.yellow .card-btn { background: #facc15; color: #000; }
+.partner-card.green .card-btn { background: #16a34a; color: #fff; }
+
+/* BOTTOM CTA */
+.partner-bottom {
+  margin-top: 80px;
+  background: #2f66c9;
+  color: #ffffff;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.partner-bottom p {
+  margin: 12px 0 20px;
+  color: #e5e7eb;
+}
+
+.bottom-mail {
+  background: #ffffff;
+  color: #2f66c9;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

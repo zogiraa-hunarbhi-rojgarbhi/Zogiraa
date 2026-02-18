@@ -1,0 +1,146 @@
+/* SECTION */
+.support-section {
+  margin-top: 80px;
+}
+
+/* HEADER */
+.support-header {
+  background: #2f6fe4;
+  padding: 50px 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.support-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.support-header h2 span {
+  color: #ffd43b;
+}
+
+.support-header p {
+  margin-top: 10px;
+  color: #e5e7eb;
+}
+
+/* CONTENT */
+.support-content {
+  padding: 60px 8%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  background: #f9fafb;
+}
+
+/* FORM */
+.support-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  background: #ffd43b;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.support-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.side-card h4 {
+  margin-bottom: 8px;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-links span {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.highlight {
+  background: #2f6fe4;
+  color: #fff;
+}
+
+.highlight a {
+  color: #ffd43b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .support-content {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full {
+    grid-column: span 1;
+  }
+}
