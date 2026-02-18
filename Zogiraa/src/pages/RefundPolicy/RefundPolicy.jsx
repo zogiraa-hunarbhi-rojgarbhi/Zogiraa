@@ -11,12 +11,8 @@ const RefundPolicy = () => {
   };
 
   const handleContinue = () => {
-    if (agreed) {
-      console.log("Agreed and Continue");
-      // Navigate to next page or perform action
-    } else {
-      alert("Please agree to the refund policy to continue.");
-    }
+    console.log("Agreed and Continue");
+    alert("Continuing to the next step...");
   };
 
   return (
