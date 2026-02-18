@@ -1,0 +1,229 @@
+/* PaymentPolicy.css - Reuse styling structure */
+
+.payment-container {
+    font-family: 'Inter', sans-serif; 
+    color: #333;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Header Section */
+.payment-header {
+    background: linear-gradient(to right, #2563EB, #1E40AF);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.header-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.header-content h1 span {
+    color: #FBBF24; 
+}
+
+.header-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+.download-btn {
+    background-color: #FBBF24; 
+    color: #000;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #e6c200;
+}
+
+.header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-large-icon {
+    font-size: 15rem;
+    color: rgba(255, 255, 255, 0.2);
+    transform: rotate(15deg);
+}
+
+/* Main Content Section */
+.payment-main {
+    padding: 4rem 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.payment-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.payment-icon {
+    background-color: #FBBF24; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    color: #000;
+}
+
+.payment-text h3 {
+    font-size: 1.3rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.payment-text p {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Footer / Agreement Section */
+.agreement-section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 1.5rem;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid #e5e7eb;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    font-size: 1rem;
+    color: #374151;
+    cursor: pointer;
+}
+
+.continue-btn {
+    background-color: #FBBF24;
+    color: #000;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.continue-btn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.continue-btn:hover {
+    background-color: #e6c200;
+}
+    
+@media (max-width: 768px) {
+    .payment-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .header-content {
+        margin-bottom: 2rem;
+    }
+    
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .payment-main {
+        padding: 2rem;
+    }
+    
+    .payment-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .agreement-section {
+        align-items: center;
+    }
+}

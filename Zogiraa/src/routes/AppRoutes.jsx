@@ -4,12 +4,14 @@ import BlankLayout from "../components/Footer/Knowledge_Hub/Layouts/BlankLayout"
 
 import HomePage from "../pages/Home/HomePage";
 import Contact from "../pages/ContactUs/Contact";
-import Employee from "../pages/Employee/Employee";
-import Workers from "../pages/Workers/Workers";
 import HowItWorks from "../pages/HowItWorks/HowItWorks";
 import TrainingPage from "../pages/Training/TrainingPage";
 import UserPolicy from "../pages/Policies/UserPolicy";
 import PartnershipPage from "../pages/Partnership/PartnershipPage";
+import TermsAndConditions from "../pages/TermsAndConditions/TermsAndConditions";
+import PrivacyPage from "../pages/PrivacyPolicy/PrivacyPage";
+import RefundPolicy from "../pages/RefundPolicy/RefundPolicy";
+import PaymentPolicy from "../pages/PaymentPolicy/PaymentPolicy";
 
 import Blog from "../components/Footer/Knowledge_Hub/Blog";
 import EmployerTips from "../components/Footer/Knowledge_Hub/EmployerTips";
@@ -27,8 +29,10 @@ const AppRoutes = () => {
         <Route path="training" element={<TrainingPage />} />
         <Route path="user-policy" element={<UserPolicy />} />
         <Route path="partner-with-us" element={<PartnershipPage />} />
-        <Route path="login-employers" element={<Employee/>}/>
-         <Route path="login-workers" element={<Workers/>}/>
+        <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="privacy-policy" element={<PrivacyPage />} />
+        <Route path="refund-policy" element={<RefundPolicy />} />
+        <Route path="payment-policy" element={<PaymentPolicy />} />
       </Route>
 
       {/* Knowledge Pages */}

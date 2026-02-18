@@ -78,8 +78,8 @@ const Footer = () => {
           <div>
             <h4>Important Policies</h4>
             <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/terms">Terms & Conditions</Link>
-            <Link to="/refund-policy">Refund Policy</Link>
+            <Link to="/terms-and-conditions">Terms & Conditions</Link>
+            <Link to="/refund-policy">Refund & Cancellation Policy</Link>
             <Link to="/payment-policy">Payment Policy</Link>
           </div>
 
@@ -110,7 +110,7 @@ const Footer = () => {
           <div className="footer-card">
             <h4>Subscribe for Updates</h4>
             <p>
-              Stay in the loop with the latest job alerts and training info.
+              Stay in the loop with the latest job alerts, training info, and success stories.
             </p>
             <input type="email" placeholder="Enter your email" />
             <input type="tel" placeholder="Mobile number" />
@@ -134,12 +134,12 @@ const Footer = () => {
         <p>Connect With Us</p>
 
         <div className="social-icons">
-          <span><FaFacebookF /></span>
-          <span><FaInstagram /></span>
-          <span><FaLinkedinIn /></span>
-          <span><FaTwitter /></span>
-          <span><FaYoutube /></span>
-          <span><FaWhatsapp /></span>
+          <span className="fb"><FaFacebookF /></span>
+          <span className="ig"><FaInstagram /></span>
+          <span className="in"><FaLinkedinIn /></span>
+          <span className="tw"><FaTwitter /></span>
+          <span className="yt"><FaYoutube /></span>
+          <span className="wa"><FaWhatsapp /></span>
         </div>
 
         <p className="copyright">
