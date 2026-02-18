@@ -4,6 +4,8 @@ import BlankLayout from "../components/Footer/Knowledge_Hub/Layouts/BlankLayout"
 
 import HomePage from "../pages/Home/HomePage";
 import Contact from "../pages/ContactUs/Contact";
+import Employee from "../pages/Employee/Employee";
+import Workers from "../pages/Workers/Workers";
 import HowItWorks from "../pages/HowItWorks/HowItWorks";
 import TrainingPage from "../pages/Training/TrainingPage";
 import UserPolicy from "../pages/Policies/UserPolicy";
@@ -25,6 +27,8 @@ const AppRoutes = () => {
         <Route path="training" element={<TrainingPage />} />
         <Route path="user-policy" element={<UserPolicy />} />
         <Route path="partner-with-us" element={<PartnershipPage />} />
+        <Route path="login-employers" element={<Employee/>}/>
+         <Route path="login-workers" element={<Workers/>}/>
       </Route>
 
       {/* Knowledge Pages */}

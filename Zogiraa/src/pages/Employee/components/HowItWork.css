@@ -1,0 +1,90 @@
+/* HowitWork.css */
+
+.how-it-works {
+  padding: 1.25rem 2rem; /* py-5 px-8 */
+}
+
+.how-container {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-header {
+  margin-bottom: 2rem;
+}
+
+.how-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.how-subtitle {
+  color: #6b7280; /* text-gray-500 */
+}
+
+/* Responsive Grid using Flexbox */
+.steps-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px; /* rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Icon Variants */
+.icon-blue {
+  background-color: #dbeafe; /* bg-blue-100 */
+  color: #2563eb; /* text-blue-600 */
+}
+
+.icon-yellow {
+  background-color: #fef9c3; /* bg-yellow-100 */
+  color: #ca8a04; /* text-yellow-600 */
+}
+
+.icon-green {
+  background-color: #dcfce7; /* bg-green-100 */
+  color: #16a34a; /* text-green-600 */
+}
+
+.step-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.step-description {
+  color: #6b7280;
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.625;
+  max-width: 20rem; /* max-w-xs */
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .steps-grid {
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between;
+  }
+  
+  .step-item {
+    flex: 1; /* Equal width for all columns */
+  }
+}
