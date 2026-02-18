@@ -17,6 +17,7 @@ import Blog from "../components/Footer/Knowledge_Hub/Blog";
 import EmployerTips from "../components/Footer/Knowledge_Hub/EmployerTips";
 import JobReadiness from "../components/Footer/Knowledge_Hub/JobReadiness";
 import GovernmentSchemes from "../components/Footer/Knowledge_Hub/GovernmentSchemes";
+import Supplier from "../pages/Supplier/Supplier";
 
 const AppRoutes = () => {
   return (
@@ -33,6 +34,7 @@ const AppRoutes = () => {
         <Route path="privacy-policy" element={<PrivacyPage />} />
         <Route path="refund-policy" element={<RefundPolicy />} />
         <Route path="payment-policy" element={<PaymentPolicy />} />
+        <Route path="Supplier" element={<Supplier />} />
       </Route>
 
       {/* Knowledge Pages */}
