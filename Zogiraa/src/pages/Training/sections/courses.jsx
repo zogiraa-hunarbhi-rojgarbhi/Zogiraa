@@ -1,4 +1,4 @@
-import "./Courses.css";
+import "./courses.css";
 
 const courses = [
   {
