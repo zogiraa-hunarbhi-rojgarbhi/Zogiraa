@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import BlankLayout from "../components/Footer/Knowledge_Hub/Layouts/BlankLayout";
 
 import HomePage from "../pages/Home/HomePage";
 import Contact from "../pages/ContactUs/Contact";
@@ -9,10 +8,10 @@ import TrainingPage from "../pages/Training/TrainingPage";
 import UserPolicy from "../pages/Policies/UserPolicy";
 import PartnershipPage from "../pages/Partnership/PartnershipPage";
 
-import Blog from "../components/Footer/Knowledge_Hub/Blog";
-import EmployerTips from "../components/Footer/Knowledge_Hub/EmployerTips";
-import JobReadiness from "../components/Footer/Knowledge_Hub/JobReadiness";
-import GovernmentSchemes from "../components/Footer/Knowledge_Hub/GovernmentSchemes";
+import Blog from "../pages/KnowledgeHub/Blog";
+import EmployerTips from "../pages/KnowledgeHub/EmployerTips";
+import JobReadiness from "../pages/KnowledgeHub/JobReadiness";
+import GovernmentSchemes from "../pages/KnowledgeHub/GovernmentSchemes";
 
 const AppRoutes = () => {
   return (
@@ -25,14 +24,14 @@ const AppRoutes = () => {
         <Route path="training" element={<TrainingPage />} />
         <Route path="user-policy" element={<UserPolicy />} />
         <Route path="partner-with-us" element={<PartnershipPage />} />
-      </Route>
 
-      {/* Knowledge Pages */}
-      <Route element={<BlankLayout />}>
-        <Route path="/knowledge/blog" element={<Blog />} />
-        <Route path="/knowledge/employers" element={<EmployerTips />} />
-        <Route path="/knowledge/job-readiness" element={<JobReadiness />} />
-        <Route path="/knowledge/government-schemes" element={<GovernmentSchemes />} />
+        {/* Knowledge Pages – use main layout via nesting */}
+        <Route path="knowledge">
+          <Route path="blog" element={<Blog />} />
+          <Route path="employers" element={<EmployerTips />} />
+          <Route path="job-readiness" element={<JobReadiness />} />
+          <Route path="government-schemes" element={<GovernmentSchemes />} />
+        </Route>
       </Route>
     </Routes>
   );
