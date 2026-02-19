@@ -1,6 +1,6 @@
 import React from "react";
 import "./ReferEarn.css";
-import referImg from "../assets/refer.png";
+import referImg from "./../../assets/refer.jpg";
 
 const ReferEarn = () => {
   return (

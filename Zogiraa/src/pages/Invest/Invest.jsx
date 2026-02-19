@@ -1,6 +1,6 @@
 import React from "react";
 import "./Invest.css";
-import investImg from "../assets/invest.png";
+import investImg from "./../../assets/invest.jpg";
 
 const Invest = () => {
   return (
