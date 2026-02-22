@@ -3,7 +3,7 @@ import { FiSearch, FiMic } from "react-icons/fi";
 import logo from "../../assets/logo.jpeg";
 import "./Header.css";
 
-const HeaderSearch = () => {
+const HeaderSearch = ({ onLoginClick }) => {
   return (
     <header className="header">
       <div className="header-inner">
@@ -17,7 +17,7 @@ const HeaderSearch = () => {
 
         <div className="header-actions">
           <span className="post-job">Post a Job</span>
-          <button className="sign-in">Sign In</button>
+          <button className="sign-in" onClick={onLoginClick}>Sign In</button>
         </div>
       </div>
     </header>
