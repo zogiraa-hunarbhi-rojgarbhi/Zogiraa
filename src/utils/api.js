@@ -48,4 +48,10 @@ export async function verifyOTP(phone, otp, role = null, mode = 'login') {
     });
 }
 
+export async function getUserProfile() {
+    return apiRequest(API_ENDPOINTS.GET_PROFILE, {
+        method: 'GET',
+    });
+}
+
 export default apiRequest;

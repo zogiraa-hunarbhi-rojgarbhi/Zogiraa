@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Hero from  "../../../assets/Home-Page01.png";
+import Hero from "../../../assets/Home-Page01.png";
 import Hamburger from "../components/Hamburger";
 const Home = () => {
   return (
@@ -8,15 +8,15 @@ const Home = () => {
       <div className="category-bar">
         <Hamburger />
         <div className="category-bar-inner">
-        <span>Construction</span>
-        <span>Industries</span>
-        <span>Electronics</span>
-        <span>Retail</span>
-        <span>Power</span>
-        <span>Skill</span>
-        <span>Logistic</span>
-        <span>Bank & Insurance</span>
-        <span>Government Jobs</span>
+          <span>Construction</span>
+          <span>Industries</span>
+          <span>Electronics</span>
+          <span>Retail</span>
+          <span>Power</span>
+          <span>Skill</span>
+          <span>Logistic</span>
+          <span>Bank & Insurance</span>
+          <span>Government Jobs</span>
         </div>
       </div>
       <div className="hero-container">
@@ -30,7 +30,7 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn yellow" onClick="#">Hire Now</button>
+            <button className="btn yellow">Hire Now</button>
             <button className="btn blue-outline">Post a Job</button>
             <button className="btn blue-outline">Buy Materials & Tools</button>
           </div>

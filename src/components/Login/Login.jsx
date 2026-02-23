@@ -76,10 +76,26 @@ const Login = ({ isOpen, onClose }) => {
 
   const handleRedirect = (confirm) => {
     if (confirm) {
+      let url = '';
       if (userRole === 'worker') {
-        window.location.href = 'http://workers.zogiraa.com';
+        url = window.location.hostname === 'localhost'
+          ? 'http://localhost:5174'
+          : 'http://workers.zogiraa.com';
       } else if (userRole === 'employer') {
-        window.location.href = 'http://employer.zogiraa.com';
+        url = window.location.hostname === 'localhost'
+          ? 'http://localhost:5176'
+          : 'http://employer.zogiraa.com';
+      }
+      if (url) {
+        // For localhost development, pass token in URL to ensure login persists across ports
+        const token = localStorage.getItem('token');
+        const redirectUrl = window.location.hostname === 'localhost'
+          ? `${url}?token=${token}`
+          : url;
+
+        window.open(redirectUrl, '_blank');
+        onClose();
+        window.location.reload();
       }
     } else {
       onClose();
