@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Hero from "../../../assets/Home-Page01.png";
 import Hamburger from "../components/Hamburger";
-const Home = () => {
+const Home = ({ onLoginClick }) => {
   return (
     <div className="hero-wrapper">
       <div className="category-bar">
@@ -30,8 +30,8 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn yellow">Hire Now</button>
-            <button className="btn blue-outline">Post a Job</button>
+            <button className="btn yellow" onClick={() => onLoginClick('employer')}>Hire Now</button>
+            <button className="btn blue-outline" onClick={() => onLoginClick('employer')}>Post a Job</button>
             <button className="btn blue-outline">Buy Materials & Tools</button>
           </div>
 

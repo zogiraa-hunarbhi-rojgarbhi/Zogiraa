@@ -1,14 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronDown, Loader2 } from 'lucide-react';
 import { sendOTP, verifyOTP } from '../../utils/api';
 import { setSharedCookie } from '../../utils/cookieUtils';
 import './login.css';
 
-const Login = ({ isOpen, onClose }) => {
+const Login = ({ isOpen, onClose, initialRole = '' }) => {
   const [step, setStep] = useState('phone'); // phone, otp, redirect
   const [phone, setPhone] = useState('');
   const [otp, setOtp] = useState('');
-  const [role, setRole] = useState('');
+  const [role, setRole] = useState(initialRole);
+
+  useEffect(() => {
+    if (isOpen) {
+      setRole(initialRole);
+      setStep('phone');
+      setError('');
+      setPhone('');
+      setOtp('');
+    }
+  }, [isOpen, initialRole]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [userRole, setUserRole] = useState('');
@@ -80,18 +90,16 @@ const Login = ({ isOpen, onClose }) => {
       if (userRole === 'worker') {
         url = window.location.hostname === 'localhost'
           ? 'http://localhost:5174'
-          : 'http://workers.zogiraa.com';
+          : 'https://worker.zogiraa.com';
       } else if (userRole === 'employer') {
         url = window.location.hostname === 'localhost'
           ? 'http://localhost:5176'
-          : 'http://employer.zogiraa.com';
+          : 'https://employer.zogiraa.com';
       }
       if (url) {
         // For localhost development, pass token in URL to ensure login persists across ports
         const token = localStorage.getItem('token');
-        const redirectUrl = window.location.hostname === 'localhost'
-          ? `${url}?token=${token}`
-          : url;
+        const redirectUrl = `${url}?token=${token}`;
 
         window.open(redirectUrl, '_blank');
         onClose();

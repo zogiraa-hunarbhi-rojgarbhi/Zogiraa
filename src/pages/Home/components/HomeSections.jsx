@@ -25,7 +25,7 @@ import welding from "../../../assets/welding.png";
 import carpenter from "../../../assets/carpenter.png";
 import powerTool from "../../../assets/powerTool.png";
 
-const HomeSections = () => {
+const HomeSections = ({ onLoginClick }) => {
   return (
     <div className="home-sections">
 
@@ -56,12 +56,17 @@ const HomeSections = () => {
 
           <div className="card-row">
             {[
-              { title: "Labour Hiring", price: "Starting ₹750/day", img: labour },
-              { title: "Employer Solutions", price: "Custom packages", img: employee },
+              { title: "Labour Hiring", price: "Starting ₹750/day", img: labour, role: 'worker' },
+              { title: "Employer Solutions", price: "Custom packages", img: employee, role: 'employer' },
               { title: "Tools & Equipment", price: "From ₹299/week", img: tools },
               { title: "Skill Training", price: "From ₹2,999", img: skill },
             ].map((item, i) => (
-              <div className="info-card" key={i}>
+              <div
+                className="info-card"
+                key={i}
+                onClick={() => item.role && onLoginClick(item.role)}
+                style={{ cursor: item.role ? 'pointer' : 'default' }}
+              >
                 <img src={item.img} alt={item.title} className="category-img" />
                 <h4>{item.title}</h4>
                 <p>{item.price}</p>

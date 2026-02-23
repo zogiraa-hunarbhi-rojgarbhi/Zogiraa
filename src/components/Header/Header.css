@@ -6,13 +6,13 @@
 }
 
 .header-inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 12px 16px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  height: 90px;
 }
 
 .logo {
@@ -23,14 +23,21 @@
 
 .search-box {
   flex: 1;
-  max-width: 520px;
+  max-width: 500px;
   display: flex;
   align-items: center;
-  background: #f8fafc;
-  border: 1px solid #d1d5db;
-  border-radius: 999px;
-  padding: 8px 14px;
-  gap: 8px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px 16px;
+  gap: 12px;
+  transition: all 0.2s;
+}
+
+.search-box:focus-within {
+  background: white;
+  border-color: #2a5eb1;
+  box-shadow: 0 4px 6px -1px rgba(42, 94, 177, 0.1);
 }
 
 .search-box input {
@@ -51,31 +58,116 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
-.post-job {
+.post-job-btn {
   font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  background: none;
+  border: none;
   cursor: pointer;
-  color: #4B5563;
+  transition: color 0.2s;
 }
+
+.post-job-btn:hover {
+  color: #2a5eb1;
+}
+
 .logo-img {
-  height: 70px !important;
-  width: 110px !important;
+  height: 85px !important;
+  width: auto !important;
   cursor: pointer;
+  object-fit: contain;
 }
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f1f5f9;
+  padding: 4px 4px 4px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.user-role {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #2a5eb1;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-link {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+}
+
+.dashboard-link:hover {
+  background: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px -1px rgba(16, 185, 129, 0.3);
+}
+
 .sign-in {
-  background: #2A5EB1;
+  background: #2a5eb1;
   color: #ffffff;
   border: none;
-  padding: 8px 18px;
+  padding: 8px 20px;
   border-radius: 8px;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sign-in:hover {
+  background: #1e4b91;
+  transform: translateY(-1px);
+}
+
+.sign-out-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sign-out-btn:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 1024px) {
+  .search-box {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
   .search-box {
+    display: none;
+  }
+
+  .header-inner {
+    padding: 10px;
+  }
+
+  .post-job-btn {
     display: none;
   }
 }

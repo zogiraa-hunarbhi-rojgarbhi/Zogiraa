@@ -6,22 +6,32 @@ import Login from "../components/Login/Login";
 
 const MainLayout = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [preferredRole, setPreferredRole] = useState('');
+
+  const openLogin = (role = '') => {
+    setPreferredRole(role);
+    setIsLoginOpen(true);
+  };
 
   return (
     <>
-      <Header onLoginClick={() => setIsLoginOpen(true)} />
+      <Header onLoginClick={openLogin} />
 
       <main
         style={{
           minHeight: "calc(100vh - 160px)",
         }}
       >
-        <Outlet />
+        <Outlet context={{ openLogin }} />
       </main>
 
       <Footer />
 
-      <Login isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />
+      <Login
+        isOpen={isLoginOpen}
+        onClose={() => setIsLoginOpen(false)}
+        initialRole={preferredRole}
+      />
     </>
   );
 };
