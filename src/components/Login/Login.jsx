@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ChevronDown, Loader2 } from 'lucide-react';
 import { sendOTP, verifyOTP } from '../../utils/api';
 import { setSharedCookie } from '../../utils/cookieUtils';
-import './login.css';
+import './Login.css';
 
 const Login = ({ isOpen, onClose, initialRole = '' }) => {
   const [step, setStep] = useState('phone'); // phone, otp, redirect
