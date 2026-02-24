@@ -3,19 +3,25 @@ import { FiSearch, FiMapPin } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import Hamburger from "../../pages/Home/components/Hamburger";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../../public/assets/logo-1.png";
 import "./Header.css";
 
 const categories = [
-  "All",
   "Construction",
-  "Industries",
+  "Healthcare",
+  "Education",
+  "Hospitality",
   "Electronics",
   "Retail",
   "Power",
-  "Skill",
   "Logistic",
-  "Bank & Insurance",
+  "Agriculture",
+  "IT & ITeS",
+  "Banking & Finance",
+  "Beauty & Wellness",
+  "Automotive",
+  "Textile",
+  "Food Industry",
 ];
 
 const HeaderSearch = ({ onLoginClick }) => {
@@ -33,7 +39,7 @@ const HeaderSearch = ({ onLoginClick }) => {
               alt="Zogiraa Logo"
               className="logo-img"
             />
-            <span className="logo-tagline">हुनर भी, रोज़गार भी</span>
+            <span className="logo-tagline" style={{ fontWeight: "bold" }}>हुनर भी, रोज़गार भी</span>
           </div>
 
           <div className="search-bar-container">

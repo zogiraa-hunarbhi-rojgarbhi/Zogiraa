@@ -3,156 +3,360 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
+  background-color: rgba(10, 18, 40, 0.55);
+  backdrop-filter: blur(6px);
   padding: 1rem;
 }
 
 .modal-card {
   background-color: #ffffff;
   width: 100%;
-  max-width: 448px; /* max-w-md */
-  border-radius: 2.5rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  padding: 2rem;
+  max-width: 440px;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  padding: 36px 32px 28px;
   position: relative;
-  /* Simple entry animation */
-  animation: modalAppear 0.3s ease-out;
+  animation: modalAppear 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 
 @keyframes modalAppear {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
+/* Close Button */
 .close-btn {
   position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  color: #9ca3af;
-  background: none;
+  top: 16px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
   border: none;
-  font-size: 1.25rem;
+  border-radius: 50%;
+  color: #6b7280;
+  font-size: 13px;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: all 0.15s;
 }
 
 .close-btn:hover {
-  color: #4b5563;
+  background: #e5e7eb;
+  color: #111;
 }
 
+/* Header */
 .modal-header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 28px;
 }
 
 .modal-header h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
 }
 
 .modal-header p {
   color: #6b7280;
-  font-size: 0.875rem;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-/* Form Styles */
+/* Form */
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 18px;
 }
 
 .input-label {
   display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #4b5563;
-  margin-bottom: 0.5rem;
-  margin-left: 0.25rem;
+  font-size: 11px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 7px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 
+/* Phone input */
 .phone-input-container {
   display: flex;
-  border: 1px solid #d1d5db;
-  border-radius: 0.75rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
   overflow: hidden;
-  transition: ring 0.2s;
+  transition: all 0.2s;
+  background: #fff;
 }
 
 .phone-input-container:focus-within {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  border-color: #3a80f2;
+  box-shadow: 0 0 0 3px rgba(58, 128, 242, 0.1);
 }
 
 .country-code {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
-  background-color: #f9fafb;
-  padding: 0 1rem;
-  border-right: 1px solid #d1d5db;
+  gap: 4px;
+  background: #f8fafc;
+  padding: 0 14px;
+  border-right: 1.5px solid #e5e7eb;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
 }
 
+/* OTP / text input  */
 .main-input {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 13px 14px;
   border: none;
   outline: none;
-  color: #374151;
+  color: #111827;
+  font-size: 15px;
+  background: transparent;
+  font-family: inherit;
 }
 
-.submit-btn {
-  width: 100%;
-  background-color: #FFC12D;
+/* OTP step — the main-input used for OTP gets centered, large */
+.login-form .main-input.text-center {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 16px;
+  padding: 14px 10px;
   color: #111827;
-  font-weight: 700;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: #f8fafc;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
   transition: all 0.2s;
 }
 
+.login-form .main-input.text-center:focus {
+  border-color: #3a80f2;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(58, 128, 242, 0.1);
+  outline: none;
+}
+
+/* Role buttons */
+.role-options {
+  display: flex;
+  gap: 10px;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background: #f8fafc;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s;
+  font-family: inherit;
+}
+
+.role-btn:hover {
+  border-color: #3a80f2;
+  color: #3a80f2;
+  background: #eff6ff;
+}
+
+.role-btn.active,
+.role-btn[style*="background: rgb(0, 112, 243)"],
+.role-btn[style*="background: #0070f3"] {
+  background: #3a80f2 !important;
+  color: #fff !important;
+  border-color: #3a80f2 !important;
+  box-shadow: 0 4px 12px rgba(58, 128, 242, 0.28);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background: #FBBF24;
+  color: #111827;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.1px;
+  box-shadow: 0 4px 14px rgba(251, 191, 36, 0.3);
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
 .submit-btn:hover {
-  background-color: #ffb700;
+  background: #F59E0B;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(251, 191, 36, 0.4);
 }
 
 .submit-btn:active {
   transform: scale(0.98);
 }
 
-/* Footer Links */
-.modal-footer {
-  margin-top: 2rem;
+/* Change Phone Number link-button */
+.change-phone-btn,
+[style*="color: #0070f3"][style*="cursor: pointer"],
+.login-form button[style*="color: #0070f3"] {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  color: #3a80f2 !important;
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
+  padding: 11px;
+  margin-top: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  text-decoration: none !important;
+}
+
+.change-phone-btn:hover,
+[style*="color: #0070f3"][style*="cursor: pointer"]:hover,
+.login-form button[style*="color: #0070f3"]:hover {
+  border-color: #3a80f2;
+  background: #eff6ff;
+}
+
+/* Error */
+.error-message {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  text-align: center;
+  color: #dc2626 !important;
+  margin-bottom: 4px;
+}
+
+/* Footer */
+.modal-footer {
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
 }
 
 .skip-btn {
   background: none;
   border: none;
-  color: #6b7280;
+  color: #9ca3af;
   font-weight: 600;
-  text-decoration: underline;
+  font-size: 13px;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  transition: color 0.2s;
+}
+
+.skip-btn:hover {
+  color: #6b7280;
 }
 
 .terms-text {
-  font-size: 10px;
+  font-size: 11px;
   color: #9ca3af;
   line-height: 1.5;
 }
 
 .link-blue {
-  color: #3b82f6;
+  color: #3a80f2;
   cursor: pointer;
+  font-weight: 600;
+}
+
+/* Redirect Step */
+.redirect-options {
+  text-align: center;
+}
+
+.redirect-question {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.redirect-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+/* shared base for both redirect buttons */
+.redirect-go-btn,
+.stay-btn {
+  flex: 1;
+  height: 50px;
+  padding: 0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.redirect-go-btn {
+  background: #FBBF24;
+  color: #111827;
+  border: none;
+  box-shadow: 0 4px 14px rgba(251, 191, 36, 0.3);
+}
+
+.redirect-go-btn:hover {
+  background: #F59E0B;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(251, 191, 36, 0.4);
+}
+
+.stay-btn {
+  background: #f8fafc;
+  color: #374151;
+  border: 1.5px solid #e5e7eb;
+}
+
+.stay-btn:hover {
+  border-color: #d1d5db;
+  background: #f1f5f9;
 }

@@ -211,20 +211,20 @@ const Login = ({ isOpen, onClose, initialRole = '' }) => {
             <button type="submit" className="submit-btn" disabled={loading}>
               {loading ? <Loader2 className="animate-spin mx-auto" size={20} /> : 'Verify OTP'}
             </button>
-            <button type="button" className="text-blue-600 text-sm mt-2 w-full text-center" style={{ color: '#0070f3', marginTop: '10px', cursor: 'pointer' }} onClick={() => setStep('phone')}>
-              Change Phone Number
+            <button type="button" className="change-phone-btn" onClick={() => setStep('phone')}>
+              ← Change Phone Number
             </button>
           </form>
         )}
 
         {step === 'redirect' && (
-          <div className="redirect-options" style={{ textAlign: 'center' }}>
-            <p style={{ marginBottom: '20px' }}>Would you like to go to your dashboard?</p>
-            <div style={{ display: 'flex', gap: '10px' }}>
-              <button onClick={() => handleRedirect(true)} className="submit-btn" style={{ flex: 1 }}>
+          <div className="redirect-options">
+            <p className="redirect-question">Would you like to go to your dashboard?</p>
+            <div className="redirect-actions">
+              <button onClick={() => handleRedirect(true)} className="redirect-go-btn">
                 Go to Dashboard
               </button>
-              <button onClick={() => handleRedirect(false)} className="skip-btn" style={{ flex: 1, padding: '12px', borderRadius: '8px', border: '1px solid #ddd', background: '#f5f5f5' }}>
+              <button onClick={() => handleRedirect(false)} className="stay-btn">
                 Stay Here
               </button>
             </div>

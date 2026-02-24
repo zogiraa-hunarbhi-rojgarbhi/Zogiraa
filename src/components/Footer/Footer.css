@@ -1,163 +1,223 @@
 .footer {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Outfit', 'Segoe UI', sans-serif;
   background: #ffffff;
+  color: #333;
 }
 
+/* ===== TOP BRAND SECTION ===== */
 .footer-top {
-  background: #2A5EB1;
+  background: #3a80f2;
   color: #fff;
-  padding: 30px 20px;
+  padding: 30px 24px;
   text-align: center;
 }
 
-.brand-logo {
-  font-size: 30px;
-  font-weight: 700;
+.logoslogan {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 8px;
 }
 
-.brand-points {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-size: 13px;
-  margin-top: 10px;
+.logo-img {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 20px;
+.brand-logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
 }
 
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.footer-links h4 {
-    color:#2A5EB1;
-    font-weight: 600;
+.sub-heading {
   font-size: 15px;
-  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px;
 }
 
-.footer-links a,
-.footer-links .footer-link {
-  display: block;
-  font-size: 13px;
-  color: #2A5EB1;
-  margin-bottom: 6px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.footer-links a:hover,
-.footer-links .footer-link:hover {
-  text-decoration: none;   /* ✅ keeps underline removed on hover */
-}
-
-.footer-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-content: center;
-}
-
-.footer-card {
-  background: #E5E7EB;
-  padding: 20px;
-  padding-top: 1px;
-  border-radius: 12px;
-}
 .brand-points {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   font-size: 13px;
-  margin-top: 10px;
+  font-weight: 600;
   flex-wrap: wrap;
 }
 
 .brand-points span {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .point-icon {
-  font-size: 14px;
-}
-
-.footer-card h4 {
-    color:#2A5EB1;
   font-size: 16px;
+  color: #FBBF24;
 }
 
-.footer-card p {
-  font-size: 14px;
-  color: rgb(0, 0, 0, 0.5);
-  margin-bottom: 4px;
-}
-.sub-heading{
-    color: #ffffff;
-}
-.footer-card input {
-  width: 90%;
-  padding: 8px 12px;
-  margin-bottom: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+/* ===== MAIN CONTENT ===== */
+.footer-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 24px 40px;
 }
 
-.whatsapp-btn {
-  background: #22c55e;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin: 10px 0;
-}
-.logoslogan{
+.footer-main-grid {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-between;
   gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.links-column {
+  flex: 1;
+  min-width: 160px;
+}
+
+.links-column h4 {
+  color: #3a80f2;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.links-column a {
+  display: block;
+  font-size: 13.5px;
+  color: #64748b;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.links-column a:hover {
+  color: #3a80f2;
+}
+
+/* ===== ACTION CARDS SECTION ===== */
+.footer-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sidebar-card {
+  background: #f8fafc;
+  border: 1px solid #eaeff5;
+  padding: 32px 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.logo-img{
-    height: 32px !important;
-    width: 48px !important;
-  cursor: pointer;
-}
-.subscribe-btn {
-  background: #2A5EB1;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  width: 98%;
-  border-radius: 6px;
+  text-align: center;
+  min-height: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.qr-box {
-  width: 120px;
-  height: 120px;
-  background: #e5e7eb;
-  margin-bottom: 10px;
+.sidebar-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-card h4 {
+  color: #3b82f6;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.sidebar-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.whatsapp-btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 12px 0;
+  width: auto;
+  min-width: 180px;
+}
+
+.whatsapp-btn-link:hover {
+  opacity: 0.9;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 260px;
+}
+
+.subscribe-form input {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+  background: #fff;
+}
+
+.subscribe-btn {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background: #2563eb;
 }
 
 .store-buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .store-btn {
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
   cursor: pointer;
+  border: none;
+  min-width: 110px;
 }
 
 .apple {
@@ -166,101 +226,105 @@
 }
 
 .android {
-  background: #16A34A;
+  background: #22c55e;
   color: #fff;
 }
 
+.store-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== BOTTOM SECTION ===== */
 .footer-bottom {
+  border-top: 1px solid #e2e8f0;
+  padding: 24px 24px;
   text-align: center;
-  padding: 30px 20px;
+}
+
+.connect-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 20px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin: 12px 0;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 .social-icons span {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  font-size: 18px;
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.fb { background: #1877f2; }
-.ig { background: #e1306c; }
-.in { background: #0a66c2; }
-.tw { background: #000; }
-.yt { background: #ff0000; }
-.wa { background: #22c55e; }
+.social-icons span:hover {
+  transform: translateY(-4px);
+}
+
+.fb {
+  background: #1877f2;
+}
+
+.ig {
+  background: #e1306c;
+}
+
+.in {
+  background: #0a66c2;
+}
+
+.tw {
+  background: #000;
+}
+
+.yt {
+  background: #ff0000;
+}
+
+.wa {
+  background: #22c55e;
+}
 
 .copyright {
   font-size: 13px;
-  color: #555;
+  color: #94a3b8;
 }
-@media (max-width: 1024px) {
-  .footer-links {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
-  .footer-cards {
-    grid-template-columns: repeat(2, 1fr);
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .brand-points {
-    flex-direction: column;
-    gap: 6px;
+  .footer-links-container {
+    gap: 30px;
   }
 
-  .footer-links {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .footer-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    padding: 40px 16px;
+  .links-column {
+    min-width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
-  .footer-top {
-    padding: 24px 16px;
+  .links-column {
+    min-width: 100%;
   }
 
-  .brand-logo {
-    font-size: 22px;
-  }
-
-  .footer-links {
-    grid-template-columns: 1fr;
-    text-align: left;
-  }
-
-  .footer-links h4 {
-    margin-top: 16px;
-  }
-
-  .footer-card {
-    padding: 16px;
-  }
-
-  .social-icons {
-    flex-wrap: wrap;
-  }
-
-  .footer-bottom {
-    padding: 24px 16px;
+  .store-buttons {
+    flex-direction: column;
   }
 }

@@ -12,6 +12,7 @@ import TermsAndConditions from "../pages/TermsAndConditions/TermsAndConditions";
 import PrivacyPage from "../pages/PrivacyPolicy/PrivacyPage";
 import RefundPolicy from "../pages/RefundPolicy/RefundPolicy";
 import PaymentPolicy from "../pages/PaymentPolicy/PaymentPolicy";
+import AboutZogiraa from "../pages/About/components/About";
 
 import Blog from "../components/Footer/Knowledge_Hub/Blog";
 import EmployerTips from "../components/Footer/Knowledge_Hub/EmployerTips";
@@ -27,6 +28,7 @@ const AppRoutes = () => {
         <Route path="contact-us" element={<Contact />} />
         <Route path="how-it-works" element={<HowItWorks />} />
         <Route path="training" element={<TrainingPage />} />
+        <Route path="about" element={<AboutZogiraa />} />
         <Route path="user-policy" element={<UserPolicy />} />
         <Route path="partner-with-us" element={<PartnershipPage />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />

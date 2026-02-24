@@ -15,7 +15,7 @@
   font-size: 34px;
   line-height: 1.15;
   margin: 0 0 8px;
-  color: #2A5EB1;          /* ✅ footer brand */
+  color: #3a80f2;          /* ✅ footer brand */
   font-weight: 800;
 }
 
@@ -61,12 +61,12 @@
 .kh-link:hover{
   background: #eef2ff;                  /* soft blue tint */
   border-color: rgba(42, 94, 177, 0.25);
-  color: #2A5EB1;                       /* ✅ brand on hover */
+  color: #3a80f2;                       /* ✅ brand on hover */
 }
 
 .kh-link.active{
-  background: #2A5EB1;                  /* ✅ footer brand */
-  border-color: #2A5EB1;
+  background: #3a80f2;                  /* ✅ footer brand */
+  border-color: #3a80f2;
   color: #fff;
   box-shadow: 0 10px 24px rgba(42, 94, 177, 0.22);
 }

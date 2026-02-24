@@ -1,36 +1,70 @@
 /* ===== Header ===== */
 .header {
   width: 100%;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Outfit', 'Inter', sans-serif;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
+/* ----- Brand Top Bar ----- */
+.brand-top-bar {
+  background: #1e40af;
+  /* Slightly darker blue */
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-points-header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.brand-points-header span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.point-icon-mini {
+  color: #FBBF24;
+  font-size: 13px;
+}
+
 /* ----- Top Bar ----- */
 .header-top {
-  background: #2A5EB1;
+  background: #3a80f2;
   width: 100%;
 }
 
 .header-top-inner {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
-  height: 54px;
-  gap: 10px;
+  height: 75px;
+  gap: 16px;
 }
 
 /* ----- Logo Section ----- */
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 14px;
   cursor: pointer;
   flex-shrink: 0;
-  transition: opacity 0.2s;
+  transition: all 0.2s ease;
 }
 
 .logo-section:hover {
@@ -38,33 +72,41 @@
 }
 
 .logo-img {
-  height: 40px;
+  height: 105px;
   width: auto;
   object-fit: contain;
-  border-radius: 3px;
-  border: 1px solid #f0c14b;
-  padding: 2px;
-  background: #fff;
+  display: block;
 }
 
 .logo-tagline {
-  color: #fff;
-  font-size: 11px;
-  font-weight: 600;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
   line-height: 1.2;
+  font-family: 'Outfit', sans-serif;
   opacity: 0.9;
 }
+
 
 /* ----- Search Bar ----- */
 .search-bar-container {
   flex: 1;
+  min-width: 0;
   display: flex;
   align-items: stretch;
-  height: 38px;
-  border-radius: 4px;
+  height: 44px;
+  border-radius: 8px;
   overflow: hidden;
-  margin: 0 8px;
+  margin: 0;
+  background: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.search-bar-container:focus-within {
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.3);
+  transform: translateY(-1px);
 }
 
 .search-category-select {
@@ -99,7 +141,7 @@
 }
 
 .search-btn {
-  background: #f3a847;
+  background: #FBBF24;
   border: none;
   padding: 0 14px;
   cursor: pointer;
@@ -116,7 +158,7 @@
 }
 
 .search-btn:hover {
-  background: #e6962e;
+  background: #F59E0B;
 }
 
 /* ----- Right Section ----- */
@@ -125,6 +167,8 @@
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+  min-width: fit-content;
+  margin-left: auto;
 }
 
 .location-selector {
@@ -167,66 +211,81 @@
 
 /* ----- Sign In / User Nav ----- */
 .sign-in-btn {
-  background: #f0c14b;
+  background: #FBBF24;
   color: #111;
-  border: 1px solid #a88734;
-  padding: 6px 16px;
-  border-radius: 3px;
-  font-size: 13px;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 8px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
   white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.35);
 }
 
 .sign-in-btn:hover {
-  background: #ddb347;
+  background: #F59E0B;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(251, 191, 36, 0.45);
 }
 
 .user-nav {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .user-role {
   font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
-  color: #f0c14b;
-  letter-spacing: 0.5px;
+  color: #fff;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
 .dashboard-link {
   background: #10b981;
   color: white;
   border: none;
-  padding: 5px 12px;
-  border-radius: 3px;
-  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
 }
 
 .dashboard-link:hover {
   background: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
 }
 
 .sign-out-btn {
-  background: #ef4444;
+  background: rgba(255, 255, 255, 0.12);
   color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 
 .sign-out-btn:hover {
-  background: #dc2626;
+  background: rgba(239, 68, 68, 0.85);
+  border-color: transparent;
+  transform: translateY(-1px);
 }
 
 /* ===== Category Navigation Bar ===== */
@@ -242,7 +301,7 @@
   display: flex;
   align-items: center;
   height: 34px;
-  gap: 2px;
+  gap: 8px;
   overflow-x: auto;
 }
 

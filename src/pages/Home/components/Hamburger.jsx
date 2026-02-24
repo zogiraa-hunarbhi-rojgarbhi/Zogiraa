@@ -37,7 +37,8 @@ const Hamburger = () => {
   return (
     <>
       <button className="hamburger-btn" onClick={() => setOpen(true)}>
-        ☰
+        <span className="hamburger-icon">☰</span>
+        <span className="hamburger-text">All</span>
       </button>
 
       {open && (
