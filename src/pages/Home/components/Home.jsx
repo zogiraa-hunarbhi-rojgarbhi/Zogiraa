@@ -1,24 +1,9 @@
 import React from "react";
 import "./Home.css";
 import Hero from "../../../assets/Home-Page01.png";
-import Hamburger from "../components/Hamburger";
 const Home = ({ onLoginClick }) => {
   return (
     <div className="hero-wrapper">
-      <div className="category-bar">
-        <Hamburger />
-        <div className="category-bar-inner">
-          <span>Construction</span>
-          <span>Industries</span>
-          <span>Electronics</span>
-          <span>Retail</span>
-          <span>Power</span>
-          <span>Skill</span>
-          <span>Logistic</span>
-          <span>Bank & Insurance</span>
-          <span>Government Jobs</span>
-        </div>
-      </div>
       <div className="hero-container">
         <div className="hero-left">
           <h1>
