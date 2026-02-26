@@ -14,7 +14,7 @@ import {
   FaGooglePlay,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-1.png";
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="footer-brand">
           <div className="logoslogan">
             <img src={logo} alt="Zogiraa Logo" className="footer-logo-img" />
-            <h2 className="brand-logo"></h2>
+            <h2 className="brand-logo">हुनर भी, रोज़गार भी</h2>
           </div>
 
           <p className="sub-heading">
