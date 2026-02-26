@@ -6,8 +6,8 @@
 
 /* ===== TOP BRAND SECTION ===== */
 .footer-top {
-  background: #3a80f2;
-  color: #fff;
+  background: #ffffff;
+  color: #555;
   padding: 30px 24px;
   text-align: center;
 }
@@ -21,22 +21,21 @@
   margin-bottom: 8px;
 }
 
-.logo-img {
-  height: 36px;
+.footer-logo-img {
+  height: 60px;
   width: auto;
-  filter: brightness(0) invert(1);
 }
 
 .brand-logo {
   font-size: 32px;
   font-weight: 800;
-  color: #fff;
+  color: #444;
   line-height: 1;
 }
 
 .sub-heading {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.9);
+  color: #777;
   margin-bottom: 16px;
 }
 
@@ -47,6 +46,7 @@
   font-size: 13px;
   font-weight: 600;
   flex-wrap: wrap;
+  color: #666;
 }
 
 .brand-points span {

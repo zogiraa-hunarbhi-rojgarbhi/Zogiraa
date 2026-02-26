@@ -11,10 +11,10 @@ import {
   FaHeart,
   FaLeaf,
   FaApple,
-  FaGooglePlay
+  FaGooglePlay,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -23,8 +23,8 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-brand">
           <div className="logoslogan">
-            <img src={logo} alt="Zogiraa Logo" className="logo-img" />
-            <h2 className="brand-logo">Zogiraa</h2>
+            <img src={logo} alt="Zogiraa Logo" className="footer-logo-img" />
+            <h2 className="brand-logo"></h2>
           </div>
 
           <p className="sub-heading">
@@ -143,12 +143,24 @@ const Footer = () => {
         <div className="bottom-content">
           <p className="connect-text">Connect With Us</p>
           <div className="social-icons">
-            <span className="fb" title="Facebook"><FaFacebookF /></span>
-            <span className="ig" title="Instagram"><FaInstagram /></span>
-            <span className="in" title="LinkedIn"><FaLinkedinIn /></span>
-            <span className="tw" title="Twitter"><FaTwitter /></span>
-            <span className="yt" title="YouTube"><FaYoutube /></span>
-            <span className="wa" title="WhatsApp"><FaWhatsapp /></span>
+            <span className="fb" title="Facebook">
+              <FaFacebookF />
+            </span>
+            <span className="ig" title="Instagram">
+              <FaInstagram />
+            </span>
+            <span className="in" title="LinkedIn">
+              <FaLinkedinIn />
+            </span>
+            <span className="tw" title="Twitter">
+              <FaTwitter />
+            </span>
+            <span className="yt" title="YouTube">
+              <FaYoutube />
+            </span>
+            <span className="wa" title="WhatsApp">
+              <FaWhatsapp />
+            </span>
           </div>
           <p className="copyright">
             © {new Date().getFullYear()} Zogiraa. All Rights Reserved.

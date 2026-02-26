@@ -3,7 +3,7 @@ import { FiSearch, FiMapPin } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import Hamburger from "../../pages/Home/components/Hamburger";
-import logo from "../../../public/assets/logo-1.png";
+import logo from "../../assets/logo.png";
 import "./Header.css";
 
 const categories = [
@@ -33,13 +33,18 @@ const HeaderSearch = ({ onLoginClick }) => {
       {/* Top Bar */}
       <div className="header-top">
         <div className="header-top-inner">
-          <div className="logo-section" onClick={() => { navigate("/"); window.scrollTo({ top: 0, behavior: "smooth" }); }} title="Go to Homepage">
-            <img
-              src={logo}
-              alt="Zogiraa Logo"
-              className="logo-img"
-            />
-            <span className="logo-tagline" style={{ fontWeight: "bold" }}>हुनर भी, रोज़गार भी</span>
+          <div
+            className="logo-section"
+            onClick={() => {
+              navigate("/");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            title="Go to Homepage"
+          >
+            <img src={logo} alt="Zogiraa Logo" className="logo-img" />
+            <span className="logo-tagline" style={{ fontWeight: "bold" }}>
+              हुनर भी, रोज़गार भी
+            </span>
           </div>
 
           <div className="search-bar-container">

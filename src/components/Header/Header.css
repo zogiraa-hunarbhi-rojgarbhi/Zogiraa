@@ -9,7 +9,7 @@
 
 /* ----- Brand Top Bar ----- */
 .brand-top-bar {
-  background: #1e40af;
+  background: #ffffff;
   /* Slightly darker blue */
   width: 100%;
   padding: 8px 0;
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   gap: 32px;
-  color: #fff;
+  color: #111;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -43,7 +43,7 @@
 
 /* ----- Top Bar ----- */
 .header-top {
-  background: #3a80f2;
+  background: #ffffff;
   width: 100%;
 }
 
@@ -72,14 +72,14 @@
 }
 
 .logo-img {
-  height: 105px;
+  height: 58px;
   width: auto;
   object-fit: contain;
   display: block;
 }
 
 .logo-tagline {
-  color: #ffffff;
+  color: #111;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
@@ -100,7 +100,7 @@
   overflow: hidden;
   margin: 0;
   background: #fff;
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border: 1.5px solid #111;
   transition: all 0.2s ease;
 }
 
@@ -182,12 +182,12 @@
 }
 
 .location-selector:hover {
-  outline: 1px solid #fff;
+  outline: 1px solid #ddd;
 }
 
 .location-icon {
   font-size: 16px;
-  color: #fff;
+  color: #111;
   flex-shrink: 0;
 }
 
@@ -199,13 +199,13 @@
 
 .location-label {
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #6b7280;
 }
 
 .location-value {
   font-size: 12px;
   font-weight: 700;
-  color: #fff;
+  color: #111;
   white-space: nowrap;
 }
 
@@ -237,16 +237,9 @@
 }
 
 .user-role {
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 1px;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 4px 12px;
-  border-radius: 20px;
-  white-space: nowrap;
+  color: #111;
+  background: #f3f4f6;
+  border: 1px solid #ddd;
 }
 
 .dashboard-link {
@@ -325,11 +318,13 @@
 .category-link {
   color: #111;
   text-decoration: none;
-  font-size: 12.5px;
-  font-weight: 600;
+  font-size: 11.5px;
+  font-weight: 700;
   padding: 4px 10px;
   border-radius: 3px;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   transition: background 0.15s;
 }
 
