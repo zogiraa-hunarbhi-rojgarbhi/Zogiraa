@@ -6,7 +6,7 @@
 
 /* ===== TOP BRAND SECTION ===== */
 .footer-top {
-  background: rgb(74, 134, 232);
+  background: #3575DD;
   color: #555;
   padding: 90px 104px;
   text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .logoslogan {
-  /* background-color: rgb(74, 134, 232); */
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -84,8 +84,8 @@
 }
 
 .footer-main-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
 }
 
@@ -124,29 +124,19 @@
   color: #3b82f6;
 }
 
-/* Sidebar Container for Desktop */
+/* Cards Container for Desktop */
 .footer-cards-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .footer-main-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
   .footer-cards-container {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 20px;
-  }
-
-  .sidebar-card {
-    flex: 1;
-    min-width: 280px;
   }
 }
 
@@ -176,6 +166,8 @@
   align-items: center;
   text-align: center;
   min-height: 250px;
+  flex: 1;
+  min-width: 280px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 

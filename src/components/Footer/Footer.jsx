@@ -16,7 +16,7 @@ import {
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo-1.png";
 
-const Footer = () => {
+const Footer = ({ onLoginClick }) => {
   return (
     <footer className="footer">
       {/* ===== TOP BRAND SECTION ===== */}
@@ -54,17 +54,17 @@ const Footer = () => {
               <h4>At Zogiraa</h4>
               <Link to="/about">About Us</Link>
               <Link to="/contact-us">Contact Us</Link>
-              <Link to="/training">Services & Plans</Link>
+              <Link to="/services-and-plans">Services & Plans</Link>
               <Link to="/how-it-works">How It Works</Link>
               <Link to="/partner-with-us">Career</Link>
             </div>
 
             <div className="links-column">
               <h4>Sign In</h4>
-              <Link to="/">Workers</Link>
-              <Link to="/">Employers</Link>
+              <a href="#" onClick={(e) => { e.preventDefault(); onLoginClick?.('worker'); }}>Workers</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); onLoginClick?.('employer'); }}>Employers</a>
               <Link to="/training">Training / Internship</Link>
-              <Link to="/">Suppliers</Link>
+              <Link to="/suppliers">Suppliers</Link>
               <Link to="/partner-with-us">Partners</Link>
             </div>
 
@@ -99,7 +99,9 @@ const Footer = () => {
             <div className="sidebar-card">
               <h4>Contact Us</h4>
               <p>+91 7669933552</p>
-              <p>HQ: H54 Sector 9, Noida 201301</p>
+              <p style={{ fontSize: '11px', marginBottom: '4px' }}><strong>HQ:</strong> 2nd Floor, H-54, Sector-9, Noida, G.B. Nagar UP-201301</p>
+              <p style={{ fontSize: '11px', marginBottom: '4px' }}><strong>Regd:</strong> Shanti Path, Saristabad, Patna-800001, Bihar</p>
+              <p style={{ fontSize: '11px', marginBottom: '4px' }}><strong>Branch:</strong> Pitamaheshwar Ghat, Gaya-823001, Bihar</p>
               <a
                 href="https://wa.me/917669933552"
                 target="_blank"
@@ -163,7 +165,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="copyright">
-            © {new Date().getFullYear()} Zogiraa. All Rights Reserved.
+            © {new Date().getFullYear()} Zomira World Pvt Ltd. All Rights Reserved.
           </p>
         </div>
       </div>

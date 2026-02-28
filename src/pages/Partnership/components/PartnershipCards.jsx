@@ -47,7 +47,7 @@ export default function PartnershipCards() {
             </ul>
 
             <a
-              href="mailto:partnerships@zogiraa.com"
+              href="mailto:partner@zogiraa.com"
               className="card-btn"
             >
               {card.btn}
@@ -66,8 +66,8 @@ export default function PartnershipCards() {
           welcomes you.
         </p>
 
-        <a href="mailto:partnerships@zogiraa.com" className="bottom-mail">
-          📩 Mail Us Now – partnerships@zogiraa.com
+        <a href="mailto:partner@zogiraa.com" className="bottom-mail">
+          📩 Mail Us Now – partner@zogiraa.com
         </a>
       </div>
     </section>

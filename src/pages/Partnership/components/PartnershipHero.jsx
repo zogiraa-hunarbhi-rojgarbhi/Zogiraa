@@ -10,10 +10,10 @@ export default function PartnershipHero() {
       </p>
 
       <a
-        href="mailto:partnerships@zogiraa.com"
+        href="mailto:partner@zogiraa.com"
         className="hero-mail-btn"
       >
-        📩 Mail Us at partnerships@zogiraa.com
+        📩 Mail Us at partner@zogiraa.com
       </a>
     </section>
   );

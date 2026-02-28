@@ -25,7 +25,7 @@ const MainLayout = () => {
         <Outlet context={{ openLogin }} />
       </main>
 
-      <Footer />
+      <Footer onLoginClick={openLogin} />
 
       <Login
         isOpen={isLoginOpen}

@@ -3,7 +3,7 @@ import { FiSearch, FiMapPin } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import Hamburger from "../../pages/Home/components/Hamburger";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-1.png";
 import "./Header.css";
 
 const categories = [
