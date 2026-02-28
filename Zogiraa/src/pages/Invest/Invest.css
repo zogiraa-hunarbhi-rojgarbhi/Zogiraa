@@ -1,0 +1,34 @@
+.invest-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: #dcfce7;
+}
+
+.invest-hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.invest-btn {
+  padding: 14px 30px;
+  border-radius: 10px;
+  background: #16a34a;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.invest-details {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 20px;
+}
+
+.invest-card {
+  width: 260px;
+  background: #f0fdf4;
+  padding: 30px;
+  border-radius: 15px;
+}

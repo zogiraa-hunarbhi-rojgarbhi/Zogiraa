@@ -1,0 +1,34 @@
+.advertise-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: #fef3c7;
+}
+
+.advertise-hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.advertise-btn {
+  padding: 14px 30px;
+  border-radius: 10px;
+  background: #f59e0b;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.advertise-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 20px;
+}
+
+.benefit {
+  width: 250px;
+  background: #fff7ed;
+  padding: 30px;
+  border-radius: 15px;
+}
