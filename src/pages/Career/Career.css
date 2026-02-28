@@ -1,0 +1,306 @@
+.career-page {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
+    background-color: var(--color-white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HERO SECTION */
+.career-hero {
+    background: linear-gradient(135deg, var(--color-primary-blue) 0%, #1e40af 100%);
+    padding: 100px 0;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.hero-tagline {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 40px;
+}
+
+.hero-intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-intro p {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 1;
+    margin-bottom: 20px;
+    color: var(--color-yellow);
+}
+
+/* WHY ZOGIRAA */
+.why-zogiraa {
+    padding: 100px 0;
+    background-color: #f8fafc;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--color-primary-blue);
+    margin-bottom: 16px;
+}
+
+.header-line {
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-yellow);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #2b5eb0;
+}
+
+.benefit-icon {
+    font-size: 40px;
+    color: var(--color-primary-blue);
+    margin-bottom: 24px;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.benefit-card p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* LOOKING FOR */
+.looking-for {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.looking-content {
+    background: linear-gradient(rgba(43, 94, 176, 0.05), rgba(43, 94, 176, 0.05));
+    padding: 60px;
+    border-radius: 32px;
+    border: 1px solid rgba(43, 94, 176, 0.1);
+}
+
+.looking-text h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--color-primary-blue);
+    margin-bottom: 12px;
+}
+
+.looking-text p {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.profile-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.profile-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 17px;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.check-icon {
+    color: #10b981;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* INTERNSHIP & FREELANCE */
+.internship-freelance {
+    padding: 60px 0;
+    background-color: #f8fafc;
+}
+
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.intern-card {
+    background: white;
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid var(--color-yellow);
+}
+
+.intern-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary-blue);
+    margin-bottom: 16px;
+}
+
+.intern-card p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* EQUAL OPPORTUNITY */
+.equal-opportunity {
+    padding: 60px 0;
+}
+
+.eo-box {
+    background-color: var(--color-light-yellow);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px dashed var(--color-yellow);
+}
+
+.eo-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #92400e;
+    margin-bottom: 12px;
+}
+
+.eo-box p {
+    font-size: 16px;
+    color: #b45309;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* HOW TO APPLY */
+.how-to-apply {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.apply-card {
+    background: linear-gradient(135deg, var(--color-primary-blue) 0%, #1e40af 100%);
+    padding: 80px 40px;
+    border-radius: 32px;
+    text-align: center;
+    color: var(--color-white);
+    box-shadow: 0 25px 50px -12px rgba(43, 94, 176, 0.25);
+}
+
+.apply-icon {
+    font-size: 60px;
+    color: var(--color-yellow);
+    margin-bottom: 30px;
+}
+
+.apply-card h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.apply-card p {
+    font-size: 20px;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.subject-line {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.email-link {
+    display: block;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-yellow);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-tagline {
+        font-size: 18px;
+    }
+
+    .looking-content {
+        padding: 30px;
+    }
+
+    .internship-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apply-card h2 {
+        font-size: 32px;
+    }
+
+    .email-link {
+        font-size: 24px;
+    }
+}

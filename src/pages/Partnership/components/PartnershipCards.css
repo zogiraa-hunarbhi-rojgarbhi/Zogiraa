@@ -15,7 +15,7 @@
   background: #ffffff;
   padding: 26px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .partner-card h3 {
@@ -42,15 +42,26 @@
 }
 
 /* COLORS */
-.partner-card.blue .card-btn { background: #2563eb; color: #fff; }
-.partner-card.yellow .card-btn { background: #facc15; color: #000; }
-.partner-card.green .card-btn { background: #16a34a; color: #fff; }
+.partner-card.blue .card-btn {
+  background: var(--color-primary-blue);
+  color: var(--text-white);
+}
+
+.partner-card.yellow .card-btn {
+  background: var(--color-yellow);
+  color: var(--text-dark);
+}
+
+.partner-card.green .card-btn {
+  background: var(--color-success-green);
+  color: var(--text-white);
+}
 
 /* BOTTOM CTA */
 .partner-bottom {
   margin-top: 80px;
-  background: #2f66c9;
-  color: #ffffff;
+  background: var(--color-primary-blue);
+  color: var(--text-white);
   padding: 60px;
   border-radius: 20px;
   text-align: center;
@@ -58,12 +69,13 @@
 
 .partner-bottom p {
   margin: 12px 0 20px;
-  color: #e5e7eb;
+  color: var(--text-white);
+  opacity: 1;
 }
 
 .bottom-mail {
-  background: #ffffff;
-  color: #2f66c9;
+  background: var(--text-white);
+  color: var(--color-primary-blue);
   padding: 12px 20px;
   border-radius: 999px;
   font-weight: 600;

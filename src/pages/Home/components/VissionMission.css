@@ -64,7 +64,7 @@
 .vm-text {
   font-size: 15px;
   line-height: 1.7;
-  color: #4B5563;
+  color: var(--text-muted);
 }
 
 /* Mission list */
@@ -80,7 +80,7 @@
   align-items: flex-start;
   gap: 10px;
   font-size: 15px;
-  color: #5f6c7b;
+  color: var(--text-muted);
   margin-bottom: 12px;
 }
 

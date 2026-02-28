@@ -1,12 +1,12 @@
 import React from "react";
 import "./VissionMission.css";
-import { FaGlobe, FaRocket, FaCheck } from "react-icons/fa";
+import { FaGlobe, FaLocationArrow, FaCheck } from "react-icons/fa";
 
 const VissionMission = () => {
   return (
     <section className="vm-wrapper">
       <div className="vm-container">
-        <div className="vm-card">
+        <div className="vm-card vision-card">
           <div className="vm-icon blue">
             <FaGlobe />
           </div>
@@ -17,25 +17,23 @@ const VissionMission = () => {
             promoting dignity of labor, inclusion, and sustainable livelihoods.
           </p>
         </div>
-        <div className="vm-card">
+        <div className="vm-card mission-card">
           <div className="vm-icon yellow">
-            <FaRocket />
+            <FaLocationArrow />
           </div>
           <h3 className="vm-title yellow-text">Mission</h3>
           <ul className="vm-list">
             <li>
-              <FaCheck /> Organize and empower India's labor force through
-              digital identity & jobs
+              <FaCheck /> Digitally organizing India's labor force with globalized identity, jobs.
             </li>
             <li>
-              <FaCheck /> Provide skill enhancement, certification, and
-              onboarding
+              <FaCheck /> Provide skill enhancement, certification and onboarding.
             </li>
             <li>
-              <FaCheck /> Ensure transparency, trust, and fair wages
+              <FaCheck /> Ensure transparency, trust and fair wages.
             </li>
             <li>
-              <FaCheck /> Build an inclusive ecosystem for long-term growth
+              <FaCheck /> Building digital empowerment for long-term growth.
             </li>
           </ul>
         </div>

@@ -16,14 +16,15 @@
 
 .subtitle {
   font-size: 16px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 /* 🔥 FORCE 5 STEPS IN ONE LINE (DESKTOP) */
 .steps-wrapper {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 in one row */
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 in one row */
   gap: 24px;
   align-items: stretch;
 }
@@ -64,7 +65,7 @@
 
 .step-card p {
   font-size: 14px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 /* ARROW BETWEEN STEPS */
@@ -170,7 +171,7 @@
 
 .quote {
   margin: 18px 0;
-  color: #374151;
+  color: var(--text-dark);
   font-size: 14px;
   line-height: 1.6;
 }

@@ -22,7 +22,8 @@
 
 .support-header p {
   margin-top: 10px;
-  color: #e5e7eb;
+  color: var(--text-white);
+  opacity: 1;
 }
 
 /* CONTENT */
@@ -39,7 +40,7 @@
   background: #fff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .form-row {
@@ -98,7 +99,7 @@
   background: #fff;
   padding: 22px;
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .side-card h4 {

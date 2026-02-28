@@ -14,8 +14,8 @@ import sitaVideo from "../../../assets/t-3.mp4";
 const testimonials = [
   {
     img: t1,
-    name: "Ravi Patel",
-    role: "Plumber",
+    name: "Sita Devi",
+    role: "Sewing Machine Operator",
     location: "Pune",
     text: "Honest platform for workers. Payment always on time.",
     video: raviVideo,
@@ -30,9 +30,9 @@ const testimonials = [
   },
   {
     img: t3,
-    name: "Sita Devi",
-    role: "Domestic Worker",
-    location: "Mumbai",
+    name: "Ravi Patel",
+    role: "Plumber",
+    location: "Pune",
     text: "I got work in 2 days after signing up.",
     video: sitaVideo,
   },

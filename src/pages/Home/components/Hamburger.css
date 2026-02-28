@@ -61,7 +61,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #374151;
+  color: var(--text-muted);
 }
 
 .close-btn {
@@ -73,7 +73,7 @@
   cursor: pointer;
   padding: 0;
   line-height: 1;
-  color: #374151;
+  color: var(--text-muted);
 
 }
 

@@ -4,8 +4,8 @@
 
 /* HERO */
 .policy-hero {
-  background: #2f66c9;
-  color: #ffffff;
+  background: var(--color-primary-blue);
+  color: var(--text-white);
   padding: 70px 8%;
 }
 
@@ -16,13 +16,15 @@
 
 .policy-hero p {
   margin-top: 6px;
-  color: #e5e7eb;
+  color: var(--text-white);
+  opacity: 1;
 }
 
 .trust-badge {
   display: inline-block;
   margin-top: 12px;
-  background: #16a34a;
+  background: var(--color-success-green);
+  color: var(--text-white);
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 13px;
@@ -51,7 +53,7 @@
 
 .subtitle {
   margin-top: 6px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 .policy-grid {
@@ -65,7 +67,7 @@
   background: #ffffff;
   padding: 22px;
   border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .policy-card h4 {
@@ -80,15 +82,15 @@
 
 .policy-card li {
   font-size: 14px;
-  color: #374151;
+  color: var(--text-muted);
   margin-bottom: 6px;
 }
 
 /* IMPACT */
 .policy-impact {
   padding: 70px 8%;
-  background: #2f66c9;
-  color: #ffffff;
+  background: var(--color-primary-blue);
+  color: var(--text-white);
   text-align: center;
 }
 
@@ -100,7 +102,8 @@
 .policy-impact p {
   max-width: 800px;
   margin: 12px auto 30px;
-  color: #e5e7eb;
+  color: var(--text-white);
+  opacity: 1;
 }
 
 .impact-stats {

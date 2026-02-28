@@ -80,7 +80,7 @@ export default function Contact() {
 
         <div className="contact-card">
           <h3>Corporate HQ (UP)</h3>
-          <p><strong>Address:</strong></p>
+          <p><strong>Zomira World Pvt Ltd</strong></p>
           <p>
             2nd Floor, H-54, Sector-9, Noida, <br />
             G.B. Nagar UP-201301
@@ -94,7 +94,7 @@ export default function Contact() {
 
         <div className="contact-card">
           <h3>Bihar Branch Office</h3>
-          <p><strong>Address:</strong></p>
+          <p><strong>Zomira World Pvt Ltd</strong></p>
           <p>Pitamaheshwar Ghat, Gaya-823001, Bihar</p>
           <p className="timing">
             Office Hours: <br />

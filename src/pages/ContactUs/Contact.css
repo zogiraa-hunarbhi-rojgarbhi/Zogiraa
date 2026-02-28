@@ -5,14 +5,14 @@
 
 /* HERO */
 .contact-hero {
-  background: #2f6fe4;
+  background: var(--color-primary-blue);
   border-radius: 16px;
   padding: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  color: #fff;
+  color: var(--text-white);
 }
 
 .contact-hero-left {
@@ -26,12 +26,13 @@
 }
 
 .contact-hero-left h1 span {
-  color: #ffd43b;
+  color: var(--text-white);
 }
 
 .contact-hero-left p {
   margin: 18px 0 30px;
-  color: #e5e7eb;
+  color: var(--color-yellow);
+  opacity: 1;
 }
 
 .contact-actions {
@@ -40,8 +41,8 @@
 }
 
 .btn-primary {
-  background: #ffd43b;
-  color: #000;
+  background: var(--color-yellow);
+  color: var(--text-dark);
   border: none;
   padding: 12px 22px;
   border-radius: 8px;
@@ -86,7 +87,7 @@
 
 .contact-card p {
   font-size: 14px;
-  color: #444;
+  color: var(--text-muted);
   margin-bottom: 10px;
 }
 
@@ -179,26 +180,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #64748b;
+  color: var(--text-muted);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .modal-close-btn:hover {
   background: #e2e8f0;
-  color: #0f172a;
+  color: var(--text-dark);
   transform: rotate(90deg);
 }
 
 .email-modal-content h2 {
   font-size: 28px;
-  color: #0f172a;
+  color: var(--text-dark);
   margin-bottom: 8px;
   font-weight: 800;
 }
 
 .modal-sub {
-  color: #64748b;
+  color: var(--text-muted);
   margin-bottom: 30px;
   font-size: 16px;
 }
@@ -222,7 +223,7 @@
 }
 
 .email-address a {
-  color: #2563eb;
+  color: var(--color-primary-blue);
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
@@ -234,7 +235,7 @@
 
 .email-label {
   font-size: 13px;
-  color: #64748b;
+  color: var(--text-muted);
   margin-top: 4px;
 }
 

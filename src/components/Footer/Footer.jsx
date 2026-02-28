@@ -56,7 +56,7 @@ const Footer = ({ onLoginClick }) => {
               <Link to="/contact-us">Contact Us</Link>
               <Link to="/services-and-plans">Services & Plans</Link>
               <Link to="/how-it-works">How It Works</Link>
-              <Link to="/partner-with-us">Career</Link>
+              <Link to="/careers">Career</Link>
             </div>
 
             <div className="links-column">
@@ -145,24 +145,21 @@ const Footer = ({ onLoginClick }) => {
         <div className="bottom-content">
           <p className="connect-text">Connect With Us</p>
           <div className="social-icons">
-            <span className="fb" title="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61577613479855" target="_blank" rel="noreferrer" className="fb" title="Facebook">
               <FaFacebookF />
-            </span>
-            <span className="ig" title="Instagram">
+            </a>
+            <a href="https://www.instagram.com/zogiraa/" target="_blank" rel="noreferrer" className="ig" title="Instagram">
               <FaInstagram />
-            </span>
-            <span className="in" title="LinkedIn">
-              <FaLinkedinIn />
-            </span>
-            <span className="tw" title="Twitter">
+            </a>
+            <a href="https://x.com/zogiraa3785" target="_blank" rel="noreferrer" className="tw" title="Twitter">
               <FaTwitter />
-            </span>
-            <span className="yt" title="YouTube">
+            </a>
+            <a href="https://www.youtube.com/@zogiraa" target="_blank" rel="noreferrer" className="yt" title="YouTube">
               <FaYoutube />
-            </span>
-            <span className="wa" title="WhatsApp">
+            </a>
+            <a href="https://wa.me/917669933552" target="_blank" rel="noreferrer" className="wa" title="WhatsApp">
               <FaWhatsapp />
-            </span>
+            </a>
           </div>
           <p className="copyright">
             © {new Date().getFullYear()} Zomira World Pvt Ltd. All Rights Reserved.

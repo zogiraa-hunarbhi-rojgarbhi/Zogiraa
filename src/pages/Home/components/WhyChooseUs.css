@@ -10,7 +10,7 @@
 .whyTitle {
   font-size: 30px;
   font-weight: 800;
-  color: #111827;
+  color: var(--text-dark);
   margin-bottom: 10px;
 }
 
@@ -32,22 +32,22 @@
   background: white;
   padding: 30px 25px;
   display: flex;
-     border: 1px solid #E5E7EB;
-   border-radius:   16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
   flex-direction: column;
-align-content: center;
-justify-content: center;
+  align-content: center;
+  justify-content: center;
   border-radius: 16px;
   text-align: left;
-  margin-top :40px;
- transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow:
     0px 10px 15px 0px rgba(0, 0, 0, 0.10),
     0px 4px 6px 0px rgba(0, 0, 0, 0.10);
 }
 
 .whyCard:hover {
-   transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .whyIcon {
@@ -59,15 +59,17 @@ justify-content: center;
   justify-content: center !important;
   align-items: center;
   font-size: 22px;
-  margin: 10px  auto !important;
+  margin: 10px auto !important;
   margin-bottom: 18px;
 }
-.iconImg{
-    max-width: 64px;
-    max-height: 64px;
-    margin: 10px  auto !important;
-    
+
+.iconImg {
+  max-width: 64px;
+  max-height: 64px;
+  margin: 10px auto !important;
+
 }
+
 /* .blue {
   background: #dbeafe;
   color: #2563EB;
@@ -101,8 +103,9 @@ justify-content: center;
   font-size: 15px;
   line-height: 1.6;
   text-align: center;
-  color:#4B5563;
+  color: #4B5563;
 }
+
 @media (max-width: 992px) {
   .whyCards {
     grid-template-columns: repeat(2, 1fr);

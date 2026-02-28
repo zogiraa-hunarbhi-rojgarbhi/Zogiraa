@@ -63,13 +63,13 @@
 
 .storyRole {
   font-size: 16px;
-  color: #374151;
+  color: var(--text-muted);
 }
 
 .storyText {
   margin-top: 14px;
   font-size: 16px;
-  color: #374151;
+  color: var(--text-dark);
   line-height: 1.5;
 }
 

@@ -2,58 +2,58 @@ import React from "react";
 import "./SupplierPage.css";
 import { FaUserAlt, FaMapMarkerAlt, FaBriefcase, FaStar } from "react-icons/fa";
 
-const workers = [
+const suppliers = [
     {
         id: 1,
-        name: "Rajesh Kumar",
-        role: "Electrician",
+        name: "Shree Ram Cement Agency",
+        role: "Cement & Building Materials",
         location: "Noida, UP",
-        experience: "5 Years",
+        experience: "15 Years",
         rating: 4.8,
         status: "Available",
     },
     {
         id: 2,
-        name: "Sunita Devi",
-        role: "Housekeeping",
+        name: "Gupta Hardware Store",
+        role: "Hardware & Tools",
         location: "Patna, Bihar",
-        experience: "3 Years",
+        experience: "12 Years",
         rating: 4.5,
         status: "In View",
     },
     {
         id: 3,
-        name: "Amit Singh",
-        role: "Delivery Partner",
+        name: "Kisan Paints & Chemicals",
+        role: "Paints & Chemicals Supply",
         location: "Gaya, Bihar",
-        experience: "2 Years",
+        experience: "8 Years",
         rating: 4.7,
         status: "Available",
     },
     {
         id: 4,
-        name: "Pooja Sharma",
-        role: "Receptionist",
+        name: "Sharma Electricals",
+        role: "Electrical Fittings",
         location: "Delhi, NCR",
-        experience: "4 Years",
+        experience: "20 Years",
         rating: 4.9,
         status: "Available",
     },
     {
         id: 5,
-        name: "Manoj Yadav",
-        role: "Warehouse Staff",
+        name: "Apex Plumbing Solutions",
+        role: "Plumbing & Sanitaryware",
         location: "Gurgaon, Haryana",
-        experience: "6 Years",
+        experience: "10 Years",
         rating: 4.6,
         status: "Available",
     },
     {
         id: 6,
-        name: "Maya Kumari",
-        role: "Data Entry Operator",
+        name: "Mishra Timbers & Plywood",
+        role: "Wood & Plywood Supply",
         location: "Patna, Bihar",
-        experience: "1 Year",
+        experience: "18 Years",
         rating: 4.4,
         status: "Available",
     },
@@ -65,29 +65,29 @@ export default function SupplierPage() {
             <section className="supplier-hero">
                 <div className="container">
                     <h1>Supplier Hub</h1>
-                    <p>Access our network of verified skilled workers for your business needs.</p>
+                    <p>Access our network of verified tool and material suppliers for your business needs.</p>
                 </div>
             </section>
 
             <div className="container">
                 <div className="supplier-content">
                     <div className="supplier-header">
-                        <h2>Labour Profile Previews</h2>
-                        <p>Showing small info cards of available workers in our database.</p>
+                        <h2>Supplier Profile Previews</h2>
+                        <p>Showing small info cards of available tool and material sellers in our network.</p>
                     </div>
 
                     <div className="worker-grid">
-                        {workers.map((worker) => (
-                            <div className="worker-small-card" key={worker.id}>
+                        {suppliers.map((supplier) => (
+                            <div className="worker-small-card" key={supplier.id}>
                                 <div className="worker-card-header">
                                     <div className="worker-avatar">
-                                        <FaUserAlt />
+                                        <FaBriefcase />
                                     </div>
                                     <div className="worker-basic-info">
-                                        <h3>{worker.name}</h3>
+                                        <h3>{supplier.name}</h3>
                                         <div className="worker-status">
-                                            <span className={`status-dot ${worker.status.toLowerCase().replace(' ', '-')}`}></span>
-                                            {worker.status}
+                                            <span className={`status-dot ${supplier.status.toLowerCase().replace(' ', '-')}`}></span>
+                                            {supplier.status}
                                         </div>
                                     </div>
                                 </div>
@@ -95,16 +95,16 @@ export default function SupplierPage() {
                                 <div className="worker-card-body">
                                     <div className="info-item">
                                         <FaBriefcase className="info-icon" />
-                                        <span>{worker.role}</span>
+                                        <span>{supplier.role}</span>
                                     </div>
                                     <div className="info-item">
                                         <FaMapMarkerAlt className="info-icon" />
-                                        <span>{worker.location}</span>
+                                        <span>{supplier.location}</span>
                                     </div>
                                     <div className="info-display">
-                                        <div className="info-badge">Exp: {worker.experience}</div>
+                                        <div className="info-badge">In Biz: {supplier.experience}</div>
                                         <div className="info-rating">
-                                            <FaStar className="star-icon" /> {worker.rating}
+                                            <FaStar className="star-icon" /> {supplier.rating}
                                         </div>
                                     </div>
                                 </div>

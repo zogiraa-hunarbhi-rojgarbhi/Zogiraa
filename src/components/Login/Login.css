@@ -49,7 +49,7 @@
   background: #f3f4f6;
   border: none;
   border-radius: 50%;
-  color: #6b7280;
+  color: var(--text-muted);
   font-size: 13px;
   cursor: pointer;
   transition: all 0.15s;
@@ -75,7 +75,7 @@
 }
 
 .modal-header p {
-  color: #6b7280;
+  color: var(--text-muted);
   font-size: 14px;
   line-height: 1.5;
 }
@@ -173,7 +173,7 @@
   border-radius: 10px;
   border: 1.5px solid #e5e7eb;
   background: #f8fafc;
-  color: #6b7280;
+  color: var(--text-muted);
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -285,7 +285,7 @@
 }
 
 .skip-btn:hover {
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 .terms-text {
@@ -306,7 +306,7 @@
 }
 
 .redirect-question {
-  color: #6b7280;
+  color: var(--text-muted);
   font-size: 15px;
   margin-bottom: 20px;
   line-height: 1.5;

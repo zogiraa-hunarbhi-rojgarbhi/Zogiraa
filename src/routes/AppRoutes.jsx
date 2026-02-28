@@ -21,6 +21,7 @@ import GovernmentSchemes from "../components/Footer/Knowledge_Hub/GovernmentSche
 import ServicesAndPlans from "../pages/ServicesAndPlans/ServicesAndPlans";
 import KnowledgeLayout from "../components/Footer/Knowledge_Hub/KnowledgeLayout";
 import SupplierPage from "../pages/Supplier/SupplierPage";
+import Career from "../pages/Career/Career";
 
 const AppRoutes = () => {
   return (
@@ -34,6 +35,7 @@ const AppRoutes = () => {
         <Route path="services-and-plans" element={<ServicesAndPlans />} />
         <Route path="suppliers" element={<SupplierPage />} />
         <Route path="about" element={<AboutZogiraa />} />
+        <Route path="careers" element={<Career />} />
         <Route path="user-policy" element={<UserPolicy />} />
         <Route path="partner-with-us" element={<PartnershipPage />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />

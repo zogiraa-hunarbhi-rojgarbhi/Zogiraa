@@ -27,7 +27,7 @@
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 1.2;
-  color: #111827;
+  color: var(--text-dark);
 }
 
 .hero-content h1 span {
@@ -35,7 +35,7 @@
 }
 
 .hero-description {
-  color: #4b5563;
+  color: var(--text-muted);
   font-size: 1rem;
   max-width: 28rem;
   line-height: 1.5;

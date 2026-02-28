@@ -143,7 +143,7 @@ const Login = ({ isOpen, onClose, initialRole = '' }) => {
                     borderRadius: '8px',
                     border: '1px solid #ddd',
                     background: role === 'worker' ? '#0070f3' : '#fff',
-                    color: role === 'worker' ? '#fff' : '#333',
+                    color: role === 'worker' ? 'var(--text-white)' : 'var(--text-dark)',
                     cursor: 'pointer'
                   }}
                 >
@@ -159,7 +159,7 @@ const Login = ({ isOpen, onClose, initialRole = '' }) => {
                     borderRadius: '8px',
                     border: '1px solid #ddd',
                     background: role === 'employer' ? '#0070f3' : '#fff',
-                    color: role === 'employer' ? '#fff' : '#333',
+                    color: role === 'employer' ? 'var(--text-white)' : 'var(--text-dark)',
                     cursor: 'pointer'
                   }}
                 >

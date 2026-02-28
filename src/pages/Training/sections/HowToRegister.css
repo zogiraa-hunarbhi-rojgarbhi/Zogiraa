@@ -11,7 +11,7 @@
 
 .subtitle {
   margin-top: 6px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 /* STEPS */
@@ -29,7 +29,7 @@
 
 .register-step p {
   font-size: 12px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 .step-circle {
@@ -86,7 +86,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 12px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 .zoom-text {
@@ -117,10 +117,21 @@
   font-weight: 700;
 }
 
-.orange { color: #f97316; }
-.green { color: #16a34a; }
-.blue { color: #2563eb; }
-.purple { color: #9333ea; }
+.orange {
+  color: #f97316;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.blue {
+  color: #2563eb;
+}
+
+.purple {
+  color: var(--color-primary-blue);
+}
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {

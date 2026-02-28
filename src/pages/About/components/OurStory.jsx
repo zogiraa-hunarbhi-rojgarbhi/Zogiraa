@@ -5,7 +5,7 @@ import {
   FaMobileAlt,
   FaGraduationCap,
   FaBriefcase,
-  FaChartLine,
+  FaLeaf,
 } from "react-icons/fa";
 
 const OurStory = () => {
@@ -22,42 +22,47 @@ const OurStory = () => {
 
         <div className="timeline">
           <div className="timeline-line"></div>
+
           <div className="timeline-dot blue"></div>
-          <div className="timeline-item left pink">
+          <div className="timeline-item left pink-card">
             <div className="icon pink">
               <FaUsers />
             </div>
             <h4>Chowk Workers Waiting</h4>
             <p>Traditional job hunting at local gathering spots</p>
           </div>
+
           <div className="timeline-dot yellow"></div>
-          <div className="timeline-item right yellow">
+          <div className="timeline-item right yellow-card">
             <div className="icon yellow">
               <FaMobileAlt />
             </div>
             <h4>Digital Onboarding</h4>
             <p>Easy registration and identity verification</p>
           </div>
+
           <div className="timeline-dot blue"></div>
-          <div className="timeline-item left blue">
+          <div className="timeline-item left blue-card">
             <div className="icon blue">
               <FaGraduationCap />
             </div>
             <h4>Training & Certification</h4>
             <p>Skill enhancement and professional development</p>
           </div>
+
           <div className="timeline-dot yellow"></div>
-          <div className="timeline-item right purple">
+          <div className="timeline-item right purple-card">
             <div className="icon purple">
               <FaBriefcase />
             </div>
             <h4>Job Placements</h4>
             <p>Contract-based employment opportunities</p>
           </div>
+
           <div className="timeline-dot blue"></div>
-          <div className="timeline-item left green">
+          <div className="timeline-item left green-card">
             <div className="icon green">
-              <FaChartLine />
+              <FaLeaf />
             </div>
             <h4>Financial Growth</h4>
             <p>Banking, payments and family prosperity</p>

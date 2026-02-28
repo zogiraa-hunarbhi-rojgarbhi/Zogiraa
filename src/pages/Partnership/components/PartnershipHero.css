@@ -1,6 +1,6 @@
 .partner-hero {
-  background: #2f66c9;
-  color: #ffffff;
+  background: var(--color-primary-blue);
+  color: var(--text-white);
   padding: 80px 8%;
   text-align: center;
 }
@@ -13,13 +13,14 @@
 .partner-hero p {
   margin: 14px auto 28px;
   max-width: 720px;
-  color: #e5e7eb;
+  color: var(--color-yellow);
+  opacity: 1;
 }
 
 .hero-mail-btn {
   display: inline-block;
-  background: #ffd43b;
-  color: #000;
+  background: var(--color-yellow);
+  color: var(--text-dark);
   padding: 12px 22px;
   border-radius: 999px;
   font-weight: 600;

@@ -7,64 +7,67 @@
 /* Container */
 .vm-container {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
 }
 
 /* Card */
 .vm-card {
+  flex: 1;
   background: #ffffff;
-  border-radius: 16px;
-  padding: 40px 32px;
-  max-width: 362px;
-  max-width: 600px;
-  border-radius: 24px;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-5px);
 }
 
 /* Icon circle */
 .vm-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 16px;
-  font-size: 22px;
-  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 
 .vm-icon.blue {
-  background: #3a80f2;
+  background: #eff6ff;
+  color: var(--color-primary-blue);
 }
 
 .vm-icon.yellow {
-  background: #FBBF24;
+  background: #fffbeb;
+  color: var(--color-yellow);
 }
 
 /* Titles */
 .vm-title {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .blue-text {
-  color: #3a80f2;
+  color: var(--color-primary-blue);
 }
 
 .yellow-text {
-  color: #FBBF24;
+  color: var(--color-yellow);
 }
 
 /* Vision text */
 .vm-text {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.7;
-  color: #4B5563;
+  color: var(--text-muted);
 }
 
 /* Mission list */
@@ -78,19 +81,30 @@
 .vm-list li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  font-size: 15px;
-  color: #5f6c7b;
-  margin-bottom: 12px;
+  gap: 12px;
+  font-size: 17px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 
 .vm-list li svg {
-  color: #22c55e;
-  font-size: 14px;
+  color: #10b981;
   margin-top: 4px;
+  flex-shrink: 0;
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+  .vm-container {
+    flex-direction: column;
+  }
+
+  .vm-card {
+    padding: 40px 30px;
+  }
+}
+
 @media (max-width: 900px) {
   .vm-container {
     grid-template-columns: 1fr;
